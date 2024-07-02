@@ -7,10 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C9FEABE2C3405100046D492 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEABD2C3405100046D492 /* MainTabBarController.swift */; };
+		8C9FEAC02C34052A0046D492 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */; };
+		8C9FEAC22C3405360046D492 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAC12C3405360046D492 /* KeychainManager.swift */; };
+		8C9FEAC42C3405410046D492 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAC32C3405410046D492 /* ImageError.swift */; };
+		8C9FEAC62C34054B0046D492 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAC52C34054B0046D492 /* ImageModel.swift */; };
+		8C9FEAC82C3405710046D492 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAC72C3405710046D492 /* APIService.swift */; };
+		8C9FEACA2C34057A0046D492 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAC92C34057A0046D492 /* Endpoint.swift */; };
+		8C9FEACC2C3405850046D492 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEACB2C3405850046D492 /* HTTP.swift */; };
+		8C9FEACE2C3405900046D492 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEACD2C3405900046D492 /* UIViewController+Extensions.swift */; };
+		8C9FEAD02C34059A0046D492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEACF2C34059A0046D492 /* Constants.swift */; };
+		8C9FEAD22C3405A90046D492 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAD12C3405A90046D492 /* WelcomeViewController.swift */; };
+		8C9FEAD42C3405B50046D492 /* GaleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAD32C3405B50046D492 /* GaleryViewController.swift */; };
+		8C9FEAD72C3405C40046D492 /* WebViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAD62C3405C40046D492 /* WebViewer.swift */; };
+		8C9FEAD92C3405D20046D492 /* HelpUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAD82C3405D20046D492 /* HelpUsViewController.swift */; };
+		8C9FEADB2C3405DA0046D492 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEADA2C3405DA0046D492 /* SubscribeViewController.swift */; };
+		8C9FEADD2C3405F70046D492 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEADC2C3405F70046D492 /* MainScreenViewModel.swift */; };
+		8C9FEADF2C3406020046D492 /* PromtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEADE2C3406020046D492 /* PromtView.swift */; };
+		8C9FEAE12C34060B0046D492 /* StylesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAE02C34060B0046D492 /* StylesCell.swift */; };
+		8C9FEAE42C34061E0046D492 /* GeneratedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAE32C34061E0046D492 /* GeneratedImageViewController.swift */; };
 		8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EA2C33FFE100A580CA /* AppDelegate.swift */; };
 		8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */; };
-		8CC034EF2C33FFE100A580CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EE2C33FFE100A580CA /* ViewController.swift */; };
-		8CC034F22C33FFE100A580CA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8CC034F12C33FFE100A580CA /* Base */; };
+		8CC034EF2C33FFE100A580CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EE2C33FFE100A580CA /* MainViewController.swift */; };
 		8CC034F42C33FFE400A580CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC034F32C33FFE400A580CA /* Assets.xcassets */; };
 		8CC034F72C33FFE400A580CA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8CC034F62C33FFE400A580CA /* Base */; };
 		8CC035022C33FFE500A580CA /* ArtifyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC035012C33FFE500A580CA /* ArtifyAppTests.swift */; };
@@ -36,11 +54,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C9FEABD2C3405100046D492 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		8C9FEAC12C3405360046D492 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		8C9FEAC32C3405410046D492 /* ImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageError.swift; sourceTree = "<group>"; };
+		8C9FEAC52C34054B0046D492 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		8C9FEAC72C3405710046D492 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8C9FEAC92C34057A0046D492 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8C9FEACB2C3405850046D492 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		8C9FEACD2C3405900046D492 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		8C9FEACF2C34059A0046D492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C9FEAD12C3405A90046D492 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8C9FEAD32C3405B50046D492 /* GaleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleryViewController.swift; sourceTree = "<group>"; };
+		8C9FEAD62C3405C40046D492 /* WebViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewer.swift; sourceTree = "<group>"; };
+		8C9FEAD82C3405D20046D492 /* HelpUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpUsViewController.swift; sourceTree = "<group>"; };
+		8C9FEADA2C3405DA0046D492 /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
+		8C9FEADC2C3405F70046D492 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		8C9FEADE2C3406020046D492 /* PromtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromtView.swift; sourceTree = "<group>"; };
+		8C9FEAE02C34060B0046D492 /* StylesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesCell.swift; sourceTree = "<group>"; };
+		8C9FEAE32C34061E0046D492 /* GeneratedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedImageViewController.swift; sourceTree = "<group>"; };
 		8CC034E72C33FFE100A580CA /* ArtifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC034EA2C33FFE100A580CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CC034EE2C33FFE100A580CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8CC034F12C33FFE100A580CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CC034EE2C33FFE100A580CA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8CC034F32C33FFE400A580CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CC034F62C33FFE400A580CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CC034F82C33FFE400A580CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,12 +112,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C9FEAB72C3402400046D492 /* ApplicationModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEABD2C3405100046D492 /* MainTabBarController.swift */,
+				8C9FEAB82C3402660046D492 /* MainScreen */,
+			);
+			path = ApplicationModule;
+			sourceTree = "<group>";
+		};
+		8C9FEAB82C3402660046D492 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEABB2C3404AC0046D492 /* Views */,
+				8C9FEABA2C3404A50046D492 /* ViewModels */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		8C9FEABA2C3404A50046D492 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEADC2C3405F70046D492 /* MainScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8C9FEABB2C3404AC0046D492 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CC034EE2C33FFE100A580CA /* MainViewController.swift */,
+				8C9FEADE2C3406020046D492 /* PromtView.swift */,
+				8C9FEAE02C34060B0046D492 /* StylesCell.swift */,
+				8C9FEAE32C34061E0046D492 /* GeneratedImageViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C9FEABC2C3404F00046D492 /* WelcomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEAD12C3405A90046D492 /* WelcomeViewController.swift */,
+				8C9FEAD32C3405B50046D492 /* GaleryViewController.swift */,
+				8C9FEAD62C3405C40046D492 /* WebViewer.swift */,
+				8C9FEAD82C3405D20046D492 /* HelpUsViewController.swift */,
+				8C9FEADA2C3405DA0046D492 /* SubscribeViewController.swift */,
+			);
+			path = WelcomeModule;
+			sourceTree = "<group>";
+		};
 		8CC034DE2C33FFE100A580CA = {
 			isa = PBXGroup;
 			children = (
 				8CC034E92C33FFE100A580CA /* ArtifyApp */,
-				8CC035002C33FFE500A580CA /* ArtifyAppTests */,
+				8CC0351A2C33FFFF00A580CA /* Application */,
+				8CC0351B2C34000700A580CA /* Assets */,
 				8CC0350A2C33FFE500A580CA /* ArtifyAppUITests */,
+				8CC035002C33FFE500A580CA /* ArtifyAppTests */,
 				8CC034E82C33FFE100A580CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,13 +186,11 @@
 		8CC034E92C33FFE100A580CA /* ArtifyApp */ = {
 			isa = PBXGroup;
 			children = (
-				8CC034EA2C33FFE100A580CA /* AppDelegate.swift */,
-				8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */,
-				8CC034EE2C33FFE100A580CA /* ViewController.swift */,
-				8CC034F02C33FFE100A580CA /* Main.storyboard */,
-				8CC034F32C33FFE400A580CA /* Assets.xcassets */,
-				8CC034F52C33FFE400A580CA /* LaunchScreen.storyboard */,
-				8CC034F82C33FFE400A580CA /* Info.plist */,
+				8CC0351D2C34001F00A580CA /* Keycahain */,
+				8CC0351E2C34003600A580CA /* Models */,
+				8CC035202C34004A00A580CA /* Networking */,
+				8CC0351C2C34000E00A580CA /* Helpers */,
+				8CC0351F2C34004300A580CA /* Modules */,
 			);
 			path = ArtifyApp;
 			sourceTree = "<group>";
@@ -125,6 +210,73 @@
 				8CC0350D2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift */,
 			);
 			path = ArtifyAppUITests;
+			sourceTree = "<group>";
+		};
+		8CC0351A2C33FFFF00A580CA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8CC034EA2C33FFE100A580CA /* AppDelegate.swift */,
+				8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */,
+			);
+			name = Application;
+			path = ArtifyApp/Application;
+			sourceTree = "<group>";
+		};
+		8CC0351B2C34000700A580CA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8CC034F32C33FFE400A580CA /* Assets.xcassets */,
+				8CC034F52C33FFE400A580CA /* LaunchScreen.storyboard */,
+				8CC034F82C33FFE400A580CA /* Info.plist */,
+			);
+			name = Assets;
+			path = ArtifyApp/Assets;
+			sourceTree = "<group>";
+		};
+		8CC0351C2C34000E00A580CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEACD2C3405900046D492 /* UIViewController+Extensions.swift */,
+				8C9FEACF2C34059A0046D492 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8CC0351D2C34001F00A580CA /* Keycahain */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */,
+				8C9FEAC12C3405360046D492 /* KeychainManager.swift */,
+			);
+			path = Keycahain;
+			sourceTree = "<group>";
+		};
+		8CC0351E2C34003600A580CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEAC32C3405410046D492 /* ImageError.swift */,
+				8C9FEAC52C34054B0046D492 /* ImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CC0351F2C34004300A580CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEABC2C3404F00046D492 /* WelcomeModule */,
+				8C9FEAB72C3402400046D492 /* ApplicationModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8CC035202C34004A00A580CA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8C9FEAC72C3405710046D492 /* APIService.swift */,
+				8C9FEAC92C34057A0046D492 /* Endpoint.swift */,
+				8C9FEACB2C3405850046D492 /* HTTP.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +385,6 @@
 			files = (
 				8CC034F42C33FFE400A580CA /* Assets.xcassets in Resources */,
 				8CC034F72C33FFE400A580CA /* Base in Resources */,
-				8CC034F22C33FFE100A580CA /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +409,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CC034EF2C33FFE100A580CA /* ViewController.swift in Sources */,
+				8C9FEAD42C3405B50046D492 /* GaleryViewController.swift in Sources */,
+				8CC034EF2C33FFE100A580CA /* MainViewController.swift in Sources */,
+				8C9FEAC22C3405360046D492 /* KeychainManager.swift in Sources */,
 				8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */,
+				8C9FEABE2C3405100046D492 /* MainTabBarController.swift in Sources */,
+				8C9FEACE2C3405900046D492 /* UIViewController+Extensions.swift in Sources */,
+				8C9FEAE42C34061E0046D492 /* GeneratedImageViewController.swift in Sources */,
+				8C9FEACC2C3405850046D492 /* HTTP.swift in Sources */,
+				8C9FEADD2C3405F70046D492 /* MainScreenViewModel.swift in Sources */,
+				8C9FEACA2C34057A0046D492 /* Endpoint.swift in Sources */,
+				8C9FEAD92C3405D20046D492 /* HelpUsViewController.swift in Sources */,
+				8C9FEAE12C34060B0046D492 /* StylesCell.swift in Sources */,
+				8C9FEADB2C3405DA0046D492 /* SubscribeViewController.swift in Sources */,
+				8C9FEAD02C34059A0046D492 /* Constants.swift in Sources */,
+				8C9FEAC42C3405410046D492 /* ImageError.swift in Sources */,
+				8C9FEAD72C3405C40046D492 /* WebViewer.swift in Sources */,
+				8C9FEAC02C34052A0046D492 /* KeychainHelper.swift in Sources */,
+				8C9FEADF2C3406020046D492 /* PromtView.swift in Sources */,
 				8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */,
+				8C9FEAC82C3405710046D492 /* APIService.swift in Sources */,
+				8C9FEAC62C34054B0046D492 /* ImageModel.swift in Sources */,
+				8C9FEAD22C3405A90046D492 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +467,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8CC034F02C33FFE100A580CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CC034F12C33FFE100A580CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8CC034F52C33FFE400A580CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,10 +606,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8GS4783WX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArtifyApp/Info.plist;
+				INFOPLIST_FILE = ArtifyApp/Assets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,9 +618,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,10 +637,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8GS4783WX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArtifyApp/Info.plist;
+				INFOPLIST_FILE = ArtifyApp/Assets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,9 +649,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
