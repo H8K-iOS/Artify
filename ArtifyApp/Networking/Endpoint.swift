@@ -25,7 +25,7 @@ enum Endpoint {
         switch self {
         case .fetchImages:
             return "/v1/images/generations"
-            //return ""
+            //        return ""
         }
     }
     

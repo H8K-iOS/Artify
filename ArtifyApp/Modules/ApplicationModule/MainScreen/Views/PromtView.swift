@@ -6,7 +6,7 @@ final class PromptView: UIView {
         let tv = UITextView()
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.backgroundColor = .darkGray.withAlphaComponent(0.4)
-        tv.text = "Describe your ideas: objects, colors, places, people..."
+        tv.text = ""
         tv.font = .systemFont(ofSize: 18)
         tv.textColor = .lightGray
         tv.layer.cornerRadius = 15

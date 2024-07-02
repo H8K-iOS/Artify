@@ -2,6 +2,7 @@ import UIKit
 
 final class MainViewController: UIViewController {
     //MARK: Constants
+    private var loadingViewController: LoadingViewController?
     private let viewModel: MainScreenViewModel
     private let artifyLogoImageView = UIImageView()
     private let promptView = PromptView()
@@ -59,17 +60,14 @@ final class MainViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: Methods
+    
+    //MARK: - Buttons Action
     @objc private func generateButtonTapped() {
-        
-        guard let promptText = promptView.textView.text, !promptText.isEmpty else {
-            print("promptText is empty")
-            return }
-        viewModel.fetchImage(for: promptText)
+        generateImage()
     }
     
     @objc private func generateRandomPromtTapped() {
-        print("generateRandomPromtTapped")
+        randomPrompt()
     }
     
     @objc private func qualityButtonTapped() {
@@ -80,13 +78,49 @@ final class MainViewController: UIViewController {
         print("seeAllStylesButtonTapped")
     }
     
+    //MARK: Methods
     private func bind() {
         viewModel.onUpdate = { [weak self] in
             guard let self = self else { return }
+            hideLoadingView()
+            
             guard let imageModel = self.viewModel.images.first else { return }
             let generatedImageVC = GeneratedImageViewController(imageURL: imageModel.url)
             self.present(generatedImageVC, animated: true)
         }
+    }
+    
+    private func showLoadingView() {
+        let loadingVC = LoadingViewController()
+        loadingVC.modalTransitionStyle = .crossDissolve
+        loadingVC.modalPresentationStyle = .overFullScreen
+        present(loadingVC, animated: true)
+        loadingViewController = loadingVC
+    }
+    
+    private func hideLoadingView() {
+        loadingViewController?.dismiss(animated: true)
+        loadingViewController = nil
+    }
+    
+    private func updatingProgress(_ progress: Float) {
+        loadingViewController?.updateProgress(progress)
+    }
+    
+    private func generateImage() {
+        guard let promptText = promptView.textView.text,
+              !promptText.isEmpty,
+              promptText != viewModel.promtText else {
+            print("promptText is empty")
+            return }
+        showLoadingView()
+        viewModel.fetchImage(for: promptText)
+    }
+    
+    private func randomPrompt() {
+        let randomIndex = Int.random(in: 0..<viewModel.randomPromts.count)
+        let selectedPromt = viewModel.randomPromts[randomIndex]
+        promptView.textView.text = "\(selectedPromt)"
     }
 }
 
@@ -109,6 +143,7 @@ private extension MainViewController {
         
         self.view.addSubview(collectionHeaderHStack)
         
+        promptView.textView.text = viewModel.promtText
         
         collectionHeaderHStack.addArrangedSubview(collectionViewLabel)
         collectionViewLabel.text = "Styles"
