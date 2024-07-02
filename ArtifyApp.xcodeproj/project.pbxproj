@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EA2C33FFE100A580CA /* AppDelegate.swift */; };
+		8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */; };
+		8CC034EF2C33FFE100A580CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EE2C33FFE100A580CA /* ViewController.swift */; };
+		8CC034F22C33FFE100A580CA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8CC034F12C33FFE100A580CA /* Base */; };
+		8CC034F42C33FFE400A580CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC034F32C33FFE400A580CA /* Assets.xcassets */; };
+		8CC034F72C33FFE400A580CA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8CC034F62C33FFE400A580CA /* Base */; };
+		8CC035022C33FFE500A580CA /* ArtifyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC035012C33FFE500A580CA /* ArtifyAppTests.swift */; };
+		8CC0350C2C33FFE500A580CA /* ArtifyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0350B2C33FFE500A580CA /* ArtifyAppUITests.swift */; };
+		8CC0350E2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0350D2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CC034FE2C33FFE500A580CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CC034DF2C33FFE100A580CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CC034E62C33FFE100A580CA;
+			remoteInfo = ArtifyApp;
+		};
+		8CC035082C33FFE500A580CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CC034DF2C33FFE100A580CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CC034E62C33FFE100A580CA;
+			remoteInfo = ArtifyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CC034E72C33FFE100A580CA /* ArtifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC034EA2C33FFE100A580CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CC034EE2C33FFE100A580CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CC034F12C33FFE100A580CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CC034F32C33FFE400A580CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CC034F62C33FFE400A580CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CC034F82C33FFE400A580CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC034FD2C33FFE500A580CA /* ArtifyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtifyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC035012C33FFE500A580CA /* ArtifyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifyAppTests.swift; sourceTree = "<group>"; };
+		8CC035072C33FFE500A580CA /* ArtifyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtifyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC0350B2C33FFE500A580CA /* ArtifyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifyAppUITests.swift; sourceTree = "<group>"; };
+		8CC0350D2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CC034E42C33FFE100A580CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC034FA2C33FFE500A580CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC035042C33FFE500A580CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CC034DE2C33FFE100A580CA = {
+			isa = PBXGroup;
+			children = (
+				8CC034E92C33FFE100A580CA /* ArtifyApp */,
+				8CC035002C33FFE500A580CA /* ArtifyAppTests */,
+				8CC0350A2C33FFE500A580CA /* ArtifyAppUITests */,
+				8CC034E82C33FFE100A580CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CC034E82C33FFE100A580CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CC034E72C33FFE100A580CA /* ArtifyApp.app */,
+				8CC034FD2C33FFE500A580CA /* ArtifyAppTests.xctest */,
+				8CC035072C33FFE500A580CA /* ArtifyAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CC034E92C33FFE100A580CA /* ArtifyApp */ = {
+			isa = PBXGroup;
+			children = (
+				8CC034EA2C33FFE100A580CA /* AppDelegate.swift */,
+				8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */,
+				8CC034EE2C33FFE100A580CA /* ViewController.swift */,
+				8CC034F02C33FFE100A580CA /* Main.storyboard */,
+				8CC034F32C33FFE400A580CA /* Assets.xcassets */,
+				8CC034F52C33FFE400A580CA /* LaunchScreen.storyboard */,
+				8CC034F82C33FFE400A580CA /* Info.plist */,
+			);
+			path = ArtifyApp;
+			sourceTree = "<group>";
+		};
+		8CC035002C33FFE500A580CA /* ArtifyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CC035012C33FFE500A580CA /* ArtifyAppTests.swift */,
+			);
+			path = ArtifyAppTests;
+			sourceTree = "<group>";
+		};
+		8CC0350A2C33FFE500A580CA /* ArtifyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0350B2C33FFE500A580CA /* ArtifyAppUITests.swift */,
+				8CC0350D2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift */,
+			);
+			path = ArtifyAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CC034E62C33FFE100A580CA /* ArtifyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC035112C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyApp" */;
+			buildPhases = (
+				8CC034E32C33FFE100A580CA /* Sources */,
+				8CC034E42C33FFE100A580CA /* Frameworks */,
+				8CC034E52C33FFE100A580CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtifyApp;
+			productName = ArtifyApp;
+			productReference = 8CC034E72C33FFE100A580CA /* ArtifyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CC034FC2C33FFE500A580CA /* ArtifyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC035142C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyAppTests" */;
+			buildPhases = (
+				8CC034F92C33FFE500A580CA /* Sources */,
+				8CC034FA2C33FFE500A580CA /* Frameworks */,
+				8CC034FB2C33FFE500A580CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CC034FF2C33FFE500A580CA /* PBXTargetDependency */,
+			);
+			name = ArtifyAppTests;
+			productName = ArtifyAppTests;
+			productReference = 8CC034FD2C33FFE500A580CA /* ArtifyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CC035062C33FFE500A580CA /* ArtifyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC035172C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyAppUITests" */;
+			buildPhases = (
+				8CC035032C33FFE500A580CA /* Sources */,
+				8CC035042C33FFE500A580CA /* Frameworks */,
+				8CC035052C33FFE500A580CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CC035092C33FFE500A580CA /* PBXTargetDependency */,
+			);
+			name = ArtifyAppUITests;
+			productName = ArtifyAppUITests;
+			productReference = 8CC035072C33FFE500A580CA /* ArtifyAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CC034DF2C33FFE100A580CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8CC034E62C33FFE100A580CA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8CC034FC2C33FFE500A580CA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8CC034E62C33FFE100A580CA;
+					};
+					8CC035062C33FFE500A580CA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8CC034E62C33FFE100A580CA;
+					};
+				};
+			};
+			buildConfigurationList = 8CC034E22C33FFE100A580CA /* Build configuration list for PBXProject "ArtifyApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CC034DE2C33FFE100A580CA;
+			productRefGroup = 8CC034E82C33FFE100A580CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CC034E62C33FFE100A580CA /* ArtifyApp */,
+				8CC034FC2C33FFE500A580CA /* ArtifyAppTests */,
+				8CC035062C33FFE500A580CA /* ArtifyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CC034E52C33FFE100A580CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC034F42C33FFE400A580CA /* Assets.xcassets in Resources */,
+				8CC034F72C33FFE400A580CA /* Base in Resources */,
+				8CC034F22C33FFE100A580CA /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC034FB2C33FFE500A580CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC035052C33FFE500A580CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CC034E32C33FFE100A580CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC034EF2C33FFE100A580CA /* ViewController.swift in Sources */,
+				8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */,
+				8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC034F92C33FFE500A580CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC035022C33FFE500A580CA /* ArtifyAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC035032C33FFE500A580CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC0350C2C33FFE500A580CA /* ArtifyAppUITests.swift in Sources */,
+				8CC0350E2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CC034FF2C33FFE500A580CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CC034E62C33FFE100A580CA /* ArtifyApp */;
+			targetProxy = 8CC034FE2C33FFE500A580CA /* PBXContainerItemProxy */;
+		};
+		8CC035092C33FFE500A580CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CC034E62C33FFE100A580CA /* ArtifyApp */;
+			targetProxy = 8CC035082C33FFE500A580CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CC034F02C33FFE100A580CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC034F12C33FFE100A580CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC034F52C33FFE400A580CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC034F62C33FFE400A580CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CC0350F2C33FFE500A580CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CC035102C33FFE500A580CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CC035122C33FFE500A580CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8GS4783WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtifyApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CC035132C33FFE500A580CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8GS4783WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtifyApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CC035152C33FFE500A580CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8GS4783WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtifyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArtifyApp";
+			};
+			name = Debug;
+		};
+		8CC035162C33FFE500A580CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8GS4783WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtifyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArtifyApp";
+			};
+			name = Release;
+		};
+		8CC035182C33FFE500A580CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8GS4783WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArtifyApp;
+			};
+			name = Debug;
+		};
+		8CC035192C33FFE500A580CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8GS4783WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArtifyApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CC034E22C33FFE100A580CA /* Build configuration list for PBXProject "ArtifyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC0350F2C33FFE500A580CA /* Debug */,
+				8CC035102C33FFE500A580CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC035112C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC035122C33FFE500A580CA /* Debug */,
+				8CC035132C33FFE500A580CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC035142C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC035152C33FFE500A580CA /* Debug */,
+				8CC035162C33FFE500A580CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC035172C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC035182C33FFE500A580CA /* Debug */,
+				8CC035192C33FFE500A580CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CC034DF2C33FFE100A580CA /* Project object */;
+}
