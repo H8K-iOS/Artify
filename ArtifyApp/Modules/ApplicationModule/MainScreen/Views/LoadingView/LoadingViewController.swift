@@ -3,7 +3,8 @@ import UIKit
 final class LoadingViewController: UIViewController {
     private let activityIndicator = RotatingCirclesActivityView()
     private let progressLabel = UILabel()
-    private let progressView = UIProgressView(progressViewStyle: .default)
+    //TODO: -
+    //private let progressView = UIProgressView(progressViewStyle: .default)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,19 +40,19 @@ final class LoadingViewController: UIViewController {
         }
     
     private func setupProgressView() {
-            progressView.translatesAutoresizingMaskIntoConstraints = false
-            progressView.progressTintColor = .white
-            
-            view.addSubview(progressView)
-            
-            NSLayoutConstraint.activate([
-                progressView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-                progressView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-                progressView.topAnchor.constraint(equalTo: progressLabel.bottomAnchor, constant: 20)
-            ])
+//            progressView.translatesAutoresizingMaskIntoConstraints = false
+//            progressView.progressTintColor = .white
+//            
+//            view.addSubview(progressView)
+//            
+//            NSLayoutConstraint.activate([
+//                progressView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+//                progressView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+//                progressView.topAnchor.constraint(equalTo: progressLabel.bottomAnchor, constant: 20)
+//            ])
         }
     
    public func updateProgress(_ progress: Float) {
-            progressView.setProgress(progress, animated: true)
+           // progressView.setProgress(progress, animated: true)
         }
 }

@@ -2,6 +2,7 @@ import UIKit
 
 final class GeneratedImageViewController: UIViewController {
     //MARK: Constants
+    private let viewModel: DetailScreenViewModel
     private let imageURLString: String
     private let imageView = UIImageView()
     private let buttonsHStack: UIStackView = {
@@ -30,7 +31,9 @@ final class GeneratedImageViewController: UIViewController {
                                                              selector: #selector(infoButtonTapped))
     
     //MARK: Lifecycle
-    init(imageURL: String) {
+    init(imageURL: String,
+         viewModel: DetailScreenViewModel = DetailScreenViewModel()) {
+        self.viewModel = viewModel
         self.imageURLString = imageURL
         super.init(nibName: nil, bundle: nil)
         
@@ -52,17 +55,9 @@ final class GeneratedImageViewController: UIViewController {
     }
     //MARK: Methods
     private func loadImage() {
-        guard let url = URL(string: imageURLString) else { return }
-        
-        URLSession.shared.dataTask(with: url) {data, resp, error in
-            guard let data = data,
-                  error == nil,
-                  let image = UIImage(data: data) else { return }
-            
-            DispatchQueue.main.async {
-                self.imageView.image = image
-            }
-        }.resume()
+        viewModel.loadImage(imageUrl: imageURLString) { [weak self] image in
+            self?.imageView.image = image
+        }
     }
     
     
@@ -116,6 +111,7 @@ private extension GeneratedImageViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .gray.withAlphaComponent(0.1)
         imageView.layer.cornerRadius = 20
+        imageView.clipsToBounds = true
         
         NSLayoutConstraint.activate([
             imageView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 16),

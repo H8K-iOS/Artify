@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C01998A2C35DDBF00966D94 /* Pods_ArtifyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52726AE281F1EB6CA0F38EA2 /* Pods_ArtifyAppTests.framework */; };
+		8C01998B2C35DDBF00966D94 /* Pods_ArtifyAppTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52726AE281F1EB6CA0F38EA2 /* Pods_ArtifyAppTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C01998D2C35DDC400966D94 /* Pods_ArtifyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A420B5C74457BD32AE375B0 /* Pods_ArtifyAppUITests.framework */; };
 		8C9FEABE2C3405100046D492 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEABD2C3405100046D492 /* MainTabBarController.swift */; };
 		8C9FEAC02C34052A0046D492 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */; };
 		8C9FEAC22C3405360046D492 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAC12C3405360046D492 /* KeychainManager.swift */; };
@@ -28,6 +31,10 @@
 		8C9FEAE42C34061E0046D492 /* GeneratedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAE32C34061E0046D492 /* GeneratedImageViewController.swift */; };
 		8C9FEAE62C3408DE0046D492 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAE52C3408DE0046D492 /* LoadingViewController.swift */; };
 		8C9FEAE92C3417680046D492 /* RotatingCirclesActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAE82C3417680046D492 /* RotatingCirclesActivityView.swift */; };
+		8C9FEAEE2C354B440046D492 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAED2C354B440046D492 /* StorageManager.swift */; };
+		8C9FEAF12C355BE60046D492 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAEF2C355BE60046D492 /* CoreData.xcdatamodeld */; };
+		8C9FEAF42C355D610046D492 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAF22C355D610046D492 /* Photo+CoreDataClass.swift */; };
+		8C9FEAF72C3569B20046D492 /* DetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAF62C3569B20046D492 /* DetailScreenViewModel.swift */; };
 		8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EA2C33FFE100A580CA /* AppDelegate.swift */; };
 		8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */; };
 		8CC034EF2C33FFE100A580CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EE2C33FFE100A580CA /* MainViewController.swift */; };
@@ -36,6 +43,7 @@
 		8CC035022C33FFE500A580CA /* ArtifyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC035012C33FFE500A580CA /* ArtifyAppTests.swift */; };
 		8CC0350C2C33FFE500A580CA /* ArtifyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0350B2C33FFE500A580CA /* ArtifyAppUITests.swift */; };
 		8CC0350E2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0350D2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift */; };
+		AA71CE8AEB0142B6A0546F76 /* Pods_ArtifyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38CD96EAD7963E555394E1B /* Pods_ArtifyApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +63,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8C01998C2C35DDBF00966D94 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C01998B2C35DDBF00966D94 /* Pods_ArtifyAppTests.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A420B5C74457BD32AE375B0 /* Pods_ArtifyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtifyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B57F42203ACE69455FF9D8A /* Pods-ArtifyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ArtifyAppTests/Pods-ArtifyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		45C6E1EEDDC73E0238EF1677 /* Pods-ArtifyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArtifyAppUITests/Pods-ArtifyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52726AE281F1EB6CA0F38EA2 /* Pods_ArtifyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtifyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E055212ACF5B944354D99DC /* Pods-ArtifyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp.release.xcconfig"; path = "Target Support Files/Pods-ArtifyApp/Pods-ArtifyApp.release.xcconfig"; sourceTree = "<group>"; };
+		8640AFA82F8727BDFD1DD74F /* Pods-ArtifyApp-ArtifyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp-ArtifyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ArtifyApp-ArtifyAppUITests/Pods-ArtifyApp-ArtifyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8756D8556301D92AFB08B095 /* Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArtifyApp-ArtifyAppUITests/Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C9FEABD2C3405100046D492 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		8C9FEAC12C3405360046D492 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -77,6 +106,10 @@
 		8C9FEAE32C34061E0046D492 /* GeneratedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedImageViewController.swift; sourceTree = "<group>"; };
 		8C9FEAE52C3408DE0046D492 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		8C9FEAE82C3417680046D492 /* RotatingCirclesActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCirclesActivityView.swift; sourceTree = "<group>"; };
+		8C9FEAED2C354B440046D492 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		8C9FEAF02C355BE60046D492 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8C9FEAF22C355D610046D492 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8C9FEAF62C3569B20046D492 /* DetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewModel.swift; sourceTree = "<group>"; };
 		8CC034E72C33FFE100A580CA /* ArtifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC034EA2C33FFE100A580CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +122,10 @@
 		8CC035072C33FFE500A580CA /* ArtifyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtifyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC0350B2C33FFE500A580CA /* ArtifyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifyAppUITests.swift; sourceTree = "<group>"; };
 		8CC0350D2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9C79085D5579EE79A4890345 /* Pods-ArtifyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ArtifyAppUITests/Pods-ArtifyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A8D0A53C78666B7DEB923480 /* Pods-ArtifyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyAppTests.release.xcconfig"; path = "Target Support Files/Pods-ArtifyAppTests/Pods-ArtifyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		BAEE401FDF388FAF5FA670A5 /* Pods-ArtifyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp.debug.xcconfig"; path = "Target Support Files/Pods-ArtifyApp/Pods-ArtifyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C38CD96EAD7963E555394E1B /* Pods_ArtifyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtifyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA71CE8AEB0142B6A0546F76 /* Pods_ArtifyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C01998A2C35DDBF00966D94 /* Pods_ArtifyAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +149,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C01998D2C35DDC400966D94 /* Pods_ArtifyAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C57A1083E665F30AAA76FFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAEE401FDF388FAF5FA670A5 /* Pods-ArtifyApp.debug.xcconfig */,
+				7E055212ACF5B944354D99DC /* Pods-ArtifyApp.release.xcconfig */,
+				8756D8556301D92AFB08B095 /* Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig */,
+				8640AFA82F8727BDFD1DD74F /* Pods-ArtifyApp-ArtifyAppUITests.release.xcconfig */,
+				45C6E1EEDDC73E0238EF1677 /* Pods-ArtifyAppUITests.debug.xcconfig */,
+				9C79085D5579EE79A4890345 /* Pods-ArtifyAppUITests.release.xcconfig */,
+				3B57F42203ACE69455FF9D8A /* Pods-ArtifyAppTests.debug.xcconfig */,
+				A8D0A53C78666B7DEB923480 /* Pods-ArtifyAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8C9FEAB72C3402400046D492 /* ApplicationModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9FEADC2C3405F70046D492 /* MainScreenViewModel.swift */,
+				8C9FEAF62C3569B20046D492 /* DetailScreenViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,6 +234,9 @@
 		8C9FEAEA2C34298B0046D492 /* CoreDataManager */ = {
 			isa = PBXGroup;
 			children = (
+				8C9FEAF22C355D610046D492 /* Photo+CoreDataClass.swift */,
+				8C9FEAED2C354B440046D492 /* StorageManager.swift */,
+				8C9FEAEF2C355BE60046D492 /* CoreData.xcdatamodeld */,
 			);
 			path = CoreDataManager;
 			sourceTree = "<group>";
@@ -191,6 +250,8 @@
 				8CC0350A2C33FFE500A580CA /* ArtifyAppUITests */,
 				8CC035002C33FFE500A580CA /* ArtifyAppTests */,
 				8CC034E82C33FFE100A580CA /* Products */,
+				A5EC6F98F3D063EAABAC26DB /* Frameworks */,
+				8C57A1083E665F30AAA76FFE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -302,6 +363,16 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		A5EC6F98F3D063EAABAC26DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C38CD96EAD7963E555394E1B /* Pods_ArtifyApp.framework */,
+				1A420B5C74457BD32AE375B0 /* Pods_ArtifyAppUITests.framework */,
+				52726AE281F1EB6CA0F38EA2 /* Pods_ArtifyAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,9 +380,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CC035112C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyApp" */;
 			buildPhases = (
+				AF674ECDE2699B812E14F50A /* [CP] Check Pods Manifest.lock */,
 				8CC034E32C33FFE100A580CA /* Sources */,
 				8CC034E42C33FFE100A580CA /* Frameworks */,
 				8CC034E52C33FFE100A580CA /* Resources */,
+				947620CEBF206F1EC3ADF2BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,9 +399,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CC035142C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyAppTests" */;
 			buildPhases = (
+				C5251B60C2F2326D29FD2472 /* [CP] Check Pods Manifest.lock */,
 				8CC034F92C33FFE500A580CA /* Sources */,
 				8CC034FA2C33FFE500A580CA /* Frameworks */,
 				8CC034FB2C33FFE500A580CA /* Resources */,
+				3B0E447D66DD183454EF3959 /* [CP] Embed Pods Frameworks */,
+				8C01998C2C35DDBF00966D94 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,9 +420,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CC035172C33FFE500A580CA /* Build configuration list for PBXNativeTarget "ArtifyAppUITests" */;
 			buildPhases = (
+				7060DE4E64220A66FDB929D4 /* [CP] Check Pods Manifest.lock */,
 				8CC035032C33FFE500A580CA /* Sources */,
 				8CC035042C33FFE500A580CA /* Frameworks */,
 				8CC035052C33FFE500A580CA /* Resources */,
+				F6BA9F674340A31E4F9C34DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,16 +505,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B0E447D66DD183454EF3959 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtifyAppTests/Pods-ArtifyAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtifyAppTests/Pods-ArtifyAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArtifyAppTests/Pods-ArtifyAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7060DE4E64220A66FDB929D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtifyAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		947620CEBF206F1EC3ADF2BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtifyApp/Pods-ArtifyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtifyApp/Pods-ArtifyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArtifyApp/Pods-ArtifyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF674ECDE2699B812E14F50A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtifyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5251B60C2F2326D29FD2472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtifyAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6BA9F674340A31E4F9C34DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtifyAppUITests/Pods-ArtifyAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtifyAppUITests/Pods-ArtifyAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArtifyAppUITests/Pods-ArtifyAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CC034E32C33FFE100A580CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9FEAF42C355D610046D492 /* Photo+CoreDataClass.swift in Sources */,
 				8C9FEAD42C3405B50046D492 /* GaleryViewController.swift in Sources */,
 				8CC034EF2C33FFE100A580CA /* MainViewController.swift in Sources */,
 				8C9FEAC22C3405360046D492 /* KeychainManager.swift in Sources */,
 				8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */,
 				8C9FEABE2C3405100046D492 /* MainTabBarController.swift in Sources */,
+				8C9FEAF12C355BE60046D492 /* CoreData.xcdatamodeld in Sources */,
 				8C9FEAE92C3417680046D492 /* RotatingCirclesActivityView.swift in Sources */,
 				8C9FEACE2C3405900046D492 /* UIViewController+Extensions.swift in Sources */,
 				8C9FEAE42C34061E0046D492 /* GeneratedImageViewController.swift in Sources */,
@@ -451,11 +651,13 @@
 				8C9FEAC42C3405410046D492 /* ImageError.swift in Sources */,
 				8C9FEAD72C3405C40046D492 /* WebViewer.swift in Sources */,
 				8C9FEAC02C34052A0046D492 /* KeychainHelper.swift in Sources */,
+				8C9FEAF72C3569B20046D492 /* DetailScreenViewModel.swift in Sources */,
 				8C9FEADF2C3406020046D492 /* PromtView.swift in Sources */,
 				8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */,
 				8C9FEAC82C3405710046D492 /* APIService.swift in Sources */,
 				8C9FEAC62C34054B0046D492 /* ImageModel.swift in Sources */,
 				8C9FEAD22C3405A90046D492 /* WelcomeViewController.swift in Sources */,
+				8C9FEAEE2C354B440046D492 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +708,7 @@
 		8CC0350F2C33FFE500A580CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -540,7 +743,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -555,7 +758,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -569,6 +772,7 @@
 		8CC035102C33FFE500A580CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -603,7 +807,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -612,7 +816,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -624,6 +828,7 @@
 		};
 		8CC035122C33FFE500A580CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAEE401FDF388FAF5FA670A5 /* Pods-ArtifyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -636,6 +841,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,6 +861,7 @@
 		};
 		8CC035132C33FFE500A580CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E055212ACF5B944354D99DC /* Pods-ArtifyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -667,6 +874,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -686,8 +894,8 @@
 		};
 		8CC035152C33FFE500A580CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B57F42203ACE69455FF9D8A /* Pods-ArtifyAppTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -706,8 +914,8 @@
 		};
 		8CC035162C33FFE500A580CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D0A53C78666B7DEB923480 /* Pods-ArtifyAppTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -726,15 +934,17 @@
 		};
 		8CC035182C33FFE500A580CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C6E1EEDDC73E0238EF1677 /* Pods-ArtifyAppUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8GS4783WX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyAppUITests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = self;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -744,15 +954,17 @@
 		};
 		8CC035192C33FFE500A580CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C79085D5579EE79A4890345 /* Pods-ArtifyAppUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8GS4783WX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyAppUITests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = self;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -800,6 +1012,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C9FEAEF2C355BE60046D492 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C9FEAF02C355BE60046D492 /* Model.xcdatamodel */,
+			);
+			currentVersion = 8C9FEAF02C355BE60046D492 /* Model.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8CC034DF2C33FFE100A580CA /* Project object */;
 }

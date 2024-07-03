@@ -1,6 +1,7 @@
 import Foundation
 final class MainScreenViewModel {
     private let apiService = APIService.shared
+    private let coreDataManager = CoreDataManager.shared
     var onUpdate: (()->Void)?
     private(set) var images: [ImageModel] = [] {
         didSet {
@@ -8,7 +9,11 @@ final class MainScreenViewModel {
         }
     }
     
-    let randomPromts = [
+    let styles = ["Cyberbunk", "3D Cartoon", "Modern"]
+    var selectedStyle: String?
+    
+    //TODO: -
+    public let randomPromts = [
         "A surreal landscape with flying elephants",
         "A futuristic cityscape at night",
         "An underwater world with glowing jellyfish",
@@ -40,7 +45,9 @@ final class MainScreenViewModel {
         "An interstellar journey through a wormhole",
         "A time loop where past and future collide"
     ]
-    let promtText = "Describe your ideas: objects, colors, places, people..."
+    
+    public let promtText = "Describe your ideas: objects, colors, places, people..."
+    
     
     init() {}
     
@@ -60,4 +67,7 @@ final class MainScreenViewModel {
         }
     }
     //
+    func saveImage(url: String, title: String) {
+        coreDataManager.createPhoto(Int16.random(in: Int16.min..<Int16.max), imageUrl: url, title: title)
+    }
 }

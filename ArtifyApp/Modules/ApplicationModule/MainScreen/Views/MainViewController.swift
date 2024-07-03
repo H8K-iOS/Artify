@@ -34,6 +34,7 @@ final class MainViewController: UIViewController {
         return sv
     }()
     //MARK: Variables
+    private var imageStyle: String?
     private lazy var generateButton = createButton(title: "Generate", selector: #selector(generateButtonTapped))
     
     //MARK: Lifecycle
@@ -54,6 +55,7 @@ final class MainViewController: UIViewController {
         stylesCollectionView.dataSource = self
         
         bind()
+        
     }
     
     required init?(coder: NSCoder) {
@@ -85,6 +87,7 @@ final class MainViewController: UIViewController {
             hideLoadingView()
             
             guard let imageModel = self.viewModel.images.first else { return }
+            viewModel.saveImage(url: imageModel.url, title: promptView.textView.text)
             let generatedImageVC = GeneratedImageViewController(imageURL: imageModel.url)
             self.present(generatedImageVC, animated: true)
         }
@@ -114,7 +117,7 @@ final class MainViewController: UIViewController {
             print("promptText is empty")
             return }
         showLoadingView()
-        viewModel.fetchImage(for: promptText)
+        viewModel.fetchImage(for: "(\(promptText). style: \(imageStyle ?? "")")
     }
     
     private func randomPrompt() {
@@ -192,12 +195,15 @@ private extension MainViewController {
 
 //MARK: - Styles Collection View Extensions
 extension MainViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedStyle = viewModel.styles[indexPath.item]
+        imageStyle = selectedStyle
+    }
 }
 
 extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        3
+        1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
