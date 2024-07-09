@@ -2,8 +2,12 @@
 Hello everyone, this is my AI-image generating App, hope u like it boys and girls!
 The application was built with UIKit and MVVM architecture.Ыtorage implemented using CoreData.
 
-![Simulator Screenshot - iPhone 15 Pro - 2024-07-09 at 23 02 51](https://github.com/H8K-iOS/Artify/assets/147388544/1af23986-16c4-432b-a942-151f7308a903) ![Simulator Screenshot - iPhone 15 Pro - 2024-07-09 at 23 02 51](https://github.com/H8K-iOS/Artify/assets/147388544/b47e7c9a-449a-4966-a401-9be7d18cca67)
-![Simulator Screenshot - iPhone 15 Pro - 2024-07-09 at 23 09 36](https://github.com/H8K-iOS/Artify/assets/147388544/becd741e-9bdc-4093-80fa-de78365b73c4) ![Simulator Screenshot - iPhone 15 Pro - 2024-07-09 at 23 03 58](https://github.com/H8K-iOS/Artify/assets/147388544/f5ba50a5-47d6-49e2-bad4-6fd37737f628)
+![Снимок экрана 2024-07-09 в 23 11 33](https://github.com/H8K-iOS/Artify/assets/147388544/0a774fbf-fe46-46b8-9608-98bebcde2e96)
+![Снимок экрана 2024-07-09 в 23 11 42](https://github.com/H8K-iOS/Artify/assets/147388544/147e94aa-573b-4ae1-8c84-5b480048c411)
+![Снимок экрана 2024-07-09 в 23 12 16](https://github.com/H8K-iOS/Artify/assets/147388544/4be03fe0-841e-4afa-9778-ca54efc6e2a1)
+![Снимок экрана 2024-07-09 в 23 14 56](https://github.com/H8K-iOS/Artify/assets/147388544/cc894c7c-6718-4c26-97b6-fb41d9010807)
+
+
 
 
 # With Artify U Can
