@@ -4,7 +4,7 @@ Hello everyone, this is my AI-image generating App, hope u like it, boys and gir
 The application was built with UIKit and MVVM architecture.Storage implemented using CoreData.
 
 
-![Uploading Снимок экрана 2024-07-09 в 23.39.08.png…]()
+![Снимок экрана 2024-07-09 в 23 39 08](https://github.com/H8K-iOS/Artify/assets/147388544/12e49a7e-8ee1-484c-8c17-6746e6f9c44e)
 
 
 P.S. The application is not completely ready yet, but I will gradually bring it to perfection. Thanks for understanding <3
