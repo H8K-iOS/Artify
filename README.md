@@ -1,11 +1,11 @@
 # Artify 
 Hello everyone, this is my AI-image generating App, hope u like it boys and girls!
 The application was built with UIKit and MVVM architecture.Ыtorage implemented using CoreData.
-
-![Снимок экрана 2024-07-09 в 23 11 33](https://github.com/H8K-iOS/Artify/assets/147388544/0a774fbf-fe46-46b8-9608-98bebcde2e96)
 ![Снимок экрана 2024-07-09 в 23 11 42](https://github.com/H8K-iOS/Artify/assets/147388544/147e94aa-573b-4ae1-8c84-5b480048c411)
-![Снимок экрана 2024-07-09 в 23 12 16](https://github.com/H8K-iOS/Artify/assets/147388544/4be03fe0-841e-4afa-9778-ca54efc6e2a1)
 ![Снимок экрана 2024-07-09 в 23 14 56](https://github.com/H8K-iOS/Artify/assets/147388544/cc894c7c-6718-4c26-97b6-fb41d9010807)
+![Снимок экрана 2024-07-09 в 23 11 33](https://github.com/H8K-iOS/Artify/assets/147388544/0a774fbf-fe46-46b8-9608-98bebcde2e96)
+![Снимок экрана 2024-07-09 в 23 12 16](https://github.com/H8K-iOS/Artify/assets/147388544/4be03fe0-841e-4afa-9778-ca54efc6e2a1)
+
 
 
 
