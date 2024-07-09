@@ -1,5 +1,5 @@
 # Artify 
-Hello everyone, this is my AI-image generating App, hope u like it boys and girls!
+Hello everyone, this is my AI-image generating App, hope u like it, boys and girls!
 The application was built with UIKit and MVVM architecture.Ыtorage implemented using CoreData.
 
 ![Снимок экрана 2024-07-09 в 23 11 42](https://github.com/H8K-iOS/Artify/assets/147388544/147e94aa-573b-4ae1-8c84-5b480048c411)
