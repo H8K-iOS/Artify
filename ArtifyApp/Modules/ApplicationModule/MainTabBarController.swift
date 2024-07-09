@@ -16,10 +16,7 @@ private extension MainTabBarController {
     func setupTabBar() {
         self.viewControllers = [
         generateVC(for: MainViewController(), icon: #imageLiteral(resourceName: "mainTab")),
-        
-        //TODO: -
-        generateVC(for: MainViewController(), icon: #imageLiteral(resourceName: "findTab")),
-        generateVC(for: MainViewController(), icon: #imageLiteral(resourceName: "historyTab")),
+        generateVC(for: HistoryViewController(), icon: #imageLiteral(resourceName: "historyTab")),
         generateVC(for: MainViewController(), icon: #imageLiteral(resourceName: "settingTab")),
         ]
     }
@@ -33,7 +30,7 @@ private extension MainTabBarController {
     func drawTabBar() {
         tabBar.backgroundImage = UIImage()
         tabBar.shadowImage = UIImage()
-        tabBar.backgroundColor = .clear
+        tabBar.backgroundColor = .black.withAlphaComponent(0.9)
         tabBar.tintColor = .white
     }
     //

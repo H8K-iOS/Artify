@@ -84,7 +84,7 @@ final class PromptView: UIView {
             textView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
             textView.leftAnchor.constraint(equalTo: leftAnchor),
             textView.rightAnchor.constraint(equalTo: rightAnchor),
-            textView.heightAnchor.constraint(equalToConstant: 140),
+            textView.heightAnchor.constraint(equalToConstant: 160),
             
             
             hStack.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 8),

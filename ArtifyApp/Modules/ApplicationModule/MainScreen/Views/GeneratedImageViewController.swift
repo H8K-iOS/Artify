@@ -4,6 +4,8 @@ final class GeneratedImageViewController: UIViewController {
     //MARK: Constants
     private let viewModel: DetailScreenViewModel
     private let imageURLString: String
+    private var imageOrientation: ImageOrientation
+    
     private let imageView = UIImageView()
     private let buttonsHStack: UIStackView = {
         let hs = UIStackView()
@@ -12,11 +14,23 @@ final class GeneratedImageViewController: UIViewController {
         hs.spacing = 4
         return hs
     }()
-    private lazy var doneButton = createDoneButton(selector: #selector(doneButtonTapped))
-    
 
     
     //MARK: Variables
+    
+    
+    private var heightForImage: CGFloat {
+           switch imageOrientation {
+           case .square:
+               return view.frame.height / 2.5
+           case .portrait:
+               return view.frame.height / 1.5
+           case .landscape:
+               return view.frame.height / 3.4
+           }
+       }
+    private lazy var doneButton = createDoneButton(selector: #selector(doneButtonTapped))
+    
     private lazy var downloadButton = createGenerateScreenButton(type: .download,
                                                                  title: "Download",
                                                                  image: nil,
@@ -32,9 +46,12 @@ final class GeneratedImageViewController: UIViewController {
     
     //MARK: Lifecycle
     init(imageURL: String,
+         imageOrientation: ImageOrientation,
          viewModel: DetailScreenViewModel = DetailScreenViewModel()) {
         self.viewModel = viewModel
         self.imageURLString = imageURL
+        self.imageOrientation = imageOrientation
+        
         super.init(nibName: nil, bundle: nil)
         
         self.modalPresentationStyle = .fullScreen
@@ -48,21 +65,43 @@ final class GeneratedImageViewController: UIViewController {
         setupLayots()
         setupImageView()
         loadImage()
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    //MARK: Methods
-    private func loadImage() {
-        viewModel.loadImage(imageUrl: imageURLString) { [weak self] image in
-            self?.imageView.image = image
-        }
+    
+    deinit {
+        
     }
     
+    //MARK: Methods
+    //TODO: - 
+    private func loadImage() {
+        viewModel.loadImage(imageUrl: imageURLString) { [weak self] image in
+                DispatchQueue.main.async {
+                    if let image = image {
+                        self?.imageView.image = image
+                        self?.viewModel.saveImageWithCoreData(image: image, height: Int16(self?.heightForImage ?? 0))
+                    } else {
+                        print("Failed to load image from url: \(String(describing: self?.imageURLString))")
+                        
+                        self?.imageView.image = UIImage()
+                    }
+                }
+            }
+    }
     
     @objc private func downloadButtonTapped() {
-        print("downloadButtonTapped")
+        guard let image = imageView.image else { return }
+        self.viewModel.saveImage(image: image) { error in
+            if let error {
+                AlertManager.showUnableToSavePhotoAlert(on: self, with: error)
+            } else {
+                AlertManager.showSuccsessToSavePhoto(on: self)
+            }
+        }
     }
     
     @objc private func regenerateButtonTapped() {
@@ -117,7 +156,7 @@ private extension GeneratedImageViewController {
             imageView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 16),
             imageView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: -16),
             imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor)
+            imageView.heightAnchor.constraint(equalToConstant: CGFloat(heightForImage))
         ])
     }
     //

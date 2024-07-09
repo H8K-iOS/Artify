@@ -1,4 +1,5 @@
 import UIKit
+import SnapKit
 
 final class MainViewController: UIViewController {
     //MARK: Constants
@@ -33,8 +34,11 @@ final class MainViewController: UIViewController {
         sv.distribution = .equalSpacing
         return sv
     }()
+    private let imageOrientationState = ImageOrientation.landscape
     //MARK: Variables
     private var imageStyle: String?
+    //TODO: -
+
     private lazy var generateButton = createButton(title: "Generate", selector: #selector(generateButtonTapped))
     
     //MARK: Lifecycle
@@ -55,7 +59,6 @@ final class MainViewController: UIViewController {
         stylesCollectionView.dataSource = self
         
         bind()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -87,8 +90,8 @@ final class MainViewController: UIViewController {
             hideLoadingView()
             
             guard let imageModel = self.viewModel.images.first else { return }
-            viewModel.saveImage(url: imageModel.url, title: promptView.textView.text)
-            let generatedImageVC = GeneratedImageViewController(imageURL: imageModel.url)
+            
+            let generatedImageVC = GeneratedImageViewController(imageURL: imageModel.url, imageOrientation: imageOrientationState)
             self.present(generatedImageVC, animated: true)
         }
     }
@@ -114,15 +117,18 @@ final class MainViewController: UIViewController {
         guard let promptText = promptView.textView.text,
               !promptText.isEmpty,
               promptText != viewModel.promtText else {
-            print("promptText is empty")
-            return }
+            AlertManager.showEmptyPromptAlert(on: self)
+            return
+        }
+        
         showLoadingView()
-        viewModel.fetchImage(for: "(\(promptText). style: \(imageStyle ?? "")")
+        let promt = viewModel.makePrompt(prompt: promptText, style: imageStyle ?? "")
+        viewModel.fetchImage(for: promt)
     }
     
     private func randomPrompt() {
-        let randomIndex = Int.random(in: 0..<viewModel.randomPromts.count)
-        let selectedPromt = viewModel.randomPromts[randomIndex]
+        let randomIndex = Int.random(in: 0..<viewModel.randomPrompts.count)
+        let selectedPromt = viewModel.randomPrompts[randomIndex]
         promptView.textView.text = "\(selectedPromt)"
     }
 }
@@ -131,10 +137,8 @@ final class MainViewController: UIViewController {
 private extension MainViewController {
     func setupView() {
         self.view.addSubview(promptView)
-        promptView.translatesAutoresizingMaskIntoConstraints = false
-        
+//        self.view.addGestureRecognizer(tapGestuer)
         self.view.addSubview(artifyLogoImageView)
-        artifyLogoImageView.translatesAutoresizingMaskIntoConstraints = false
         artifyLogoImageView.image = #imageLiteral(resourceName: "artifyLogo")
         artifyLogoImageView.contentMode = .scaleAspectFill
         
@@ -142,7 +146,7 @@ private extension MainViewController {
         promptView.qualityButton.addTarget(self, action: #selector(qualityButtonTapped), for: .touchUpInside)
         
         self.view.addSubview(stylesCollectionView)
-        stylesCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        
         
         self.view.addSubview(collectionHeaderHStack)
         
@@ -152,63 +156,71 @@ private extension MainViewController {
         collectionViewLabel.text = "Styles"
         collectionViewLabel.font = .systemFont(ofSize: 22)
         
-        
         collectionHeaderHStack.addArrangedSubview(seeAllStylesButton)
-        
-        
         self.view.addSubview(generateButton)
-        generateButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        
     }
     
     func setupLayouts() {
-        NSLayoutConstraint.activate([
-            artifyLogoImageView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-            artifyLogoImageView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 16),
-            artifyLogoImageView.heightAnchor.constraint(equalToConstant: 25),
-            artifyLogoImageView.widthAnchor.constraint(equalToConstant: 87),
-            
-            promptView.topAnchor.constraint(equalTo: artifyLogoImageView.bottomAnchor, constant: 36),
-            promptView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 16),
-            promptView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: -16),
-            
-            
-            stylesCollectionView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 16),
-            stylesCollectionView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: -16),
-            stylesCollectionView.topAnchor.constraint(equalTo: promptView.bottomAnchor, constant: 40),
-            stylesCollectionView.heightAnchor.constraint(equalToConstant: 170),
-            
-//            collectionViewLabel.topAnchor.constraint(equalTo: stylesCollectionView.topAnchor, constant: -8),
-//            collectionViewLabel.leftAnchor.constraint(equalTo: stylesCollectionView.leftAnchor),
-            
-            collectionHeaderHStack.topAnchor.constraint(equalTo: stylesCollectionView.topAnchor, constant: -8),
-            collectionHeaderHStack.leftAnchor.constraint(equalTo: stylesCollectionView.leftAnchor),
-            collectionHeaderHStack.rightAnchor.constraint(equalTo: stylesCollectionView.rightAnchor),
-            
-            generateButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -26),
-            generateButton.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 16),
-            generateButton.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: -16),
-        ])
+        artifyLogoImageView.snp.makeConstraints { make in
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(16)
+            make.height.equalTo(25)
+            make.width.equalTo(87)
+        }
+        
+        promptView.snp.makeConstraints { make in
+            make.top.equalTo(artifyLogoImageView.snp.bottom).offset(36)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(16)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-16)
+        }
+        
+        stylesCollectionView.snp.makeConstraints { make in
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(16)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-16)
+            make.top.equalTo(promptView.snp.bottom).offset(40)
+            make.height.equalTo(240)
+        }
+        
+        collectionHeaderHStack.snp.makeConstraints { make in
+            make.top.equalTo(stylesCollectionView.snp.top).offset(-8)
+            make.left.equalTo(stylesCollectionView.snp.left)
+            make.right.equalTo(stylesCollectionView.snp.right)
+        }
+        
+        generateButton.snp.makeConstraints { make in
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-26)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(16)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-16)
+        }
     }
 }
+
 
 //MARK: - Styles Collection View Extensions
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedStyle = viewModel.styles[indexPath.item]
-        imageStyle = selectedStyle
+        imageStyle = selectedStyle.styleName
+        
+        if let cell = collectionView.cellForItem(at: indexPath) as? StylesCell {
+            cell.isSelected = true
+        }
     }
 }
 
 extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        return viewModel.styles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StylesCell.identifier, for: indexPath) as? StylesCell else { return UICollectionViewCell()}
-        cell.configure()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StylesCell.identifier, for: indexPath) as? StylesCell else {
+            return UICollectionViewCell()
+        }
+        
+        let style = viewModel.styles[indexPath.item]
+        cell.configure(with: style)
+        
         return cell
     }
     
@@ -217,12 +229,11 @@ extension MainViewController: UICollectionViewDataSource {
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (self.view.frame.width/3.4)
+        let size = (self.view.frame.width/2.7)
         return CGSize(width: size, height: size)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 12
     }
-    //
 }

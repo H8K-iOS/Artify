@@ -2,8 +2,18 @@ import Foundation
 import UIKit
 
 final class DetailScreenViewModel {
+    private let photoLibrary = PhotoLibraryManager()
+    private let coreDataManager = CoreDataManager.shared
     
     init() {}
+    
+    func saveImage(image: UIImage, completion: @escaping(Error?)->Void) {
+        photoLibrary.saveImage(image: image, completion: completion)
+    }
+    
+    func saveImageWithCoreData(image: UIImage, height: Int16) {
+        coreDataManager.addImage("", image: image, height: height)
+    }
     
     func loadImage(imageUrl: String, completion: @escaping(UIImage?)->Void) {
         guard let url = URL(string: imageUrl) else {

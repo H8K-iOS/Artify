@@ -10,6 +10,12 @@
 		8C01998A2C35DDBF00966D94 /* Pods_ArtifyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52726AE281F1EB6CA0F38EA2 /* Pods_ArtifyAppTests.framework */; };
 		8C01998B2C35DDBF00966D94 /* Pods_ArtifyAppTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52726AE281F1EB6CA0F38EA2 /* Pods_ArtifyAppTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C01998D2C35DDC400966D94 /* Pods_ArtifyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A420B5C74457BD32AE375B0 /* Pods_ArtifyAppUITests.framework */; };
+		8C15EAAA2C3B349F003461D8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15EAA92C3B349F003461D8 /* HistoryViewController.swift */; };
+		8C39AD8E2C3C7C4C007C26C7 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39AD8D2C3C7C4C007C26C7 /* HistoryCell.swift */; };
+		8C89B07C2C3BF9BB00801545 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C89B07A2C3BF9BB00801545 /* CoreData.xcdatamodeld */; };
+		8C89B07F2C3BFA2200801545 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89B07D2C3BFA2200801545 /* Image+CoreDataClass.swift */; };
+		8C89B0822C3C01A400801545 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89B0812C3C01A400801545 /* CoreDataManager.swift */; };
+		8C89B0842C3C066900801545 /* HistoryScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89B0832C3C066900801545 /* HistoryScreenViewModel.swift */; };
 		8C9FEABE2C3405100046D492 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEABD2C3405100046D492 /* MainTabBarController.swift */; };
 		8C9FEAC02C34052A0046D492 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */; };
 		8C9FEAC22C3405360046D492 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAC12C3405360046D492 /* KeychainManager.swift */; };
@@ -31,9 +37,6 @@
 		8C9FEAE42C34061E0046D492 /* GeneratedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAE32C34061E0046D492 /* GeneratedImageViewController.swift */; };
 		8C9FEAE62C3408DE0046D492 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAE52C3408DE0046D492 /* LoadingViewController.swift */; };
 		8C9FEAE92C3417680046D492 /* RotatingCirclesActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAE82C3417680046D492 /* RotatingCirclesActivityView.swift */; };
-		8C9FEAEE2C354B440046D492 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAED2C354B440046D492 /* StorageManager.swift */; };
-		8C9FEAF12C355BE60046D492 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAEF2C355BE60046D492 /* CoreData.xcdatamodeld */; };
-		8C9FEAF42C355D610046D492 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAF22C355D610046D492 /* Photo+CoreDataClass.swift */; };
 		8C9FEAF72C3569B20046D492 /* DetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAF62C3569B20046D492 /* DetailScreenViewModel.swift */; };
 		8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EA2C33FFE100A580CA /* AppDelegate.swift */; };
 		8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC034EC2C33FFE100A580CA /* SceneDelegate.swift */; };
@@ -43,6 +46,9 @@
 		8CC035022C33FFE500A580CA /* ArtifyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC035012C33FFE500A580CA /* ArtifyAppTests.swift */; };
 		8CC0350C2C33FFE500A580CA /* ArtifyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0350B2C33FFE500A580CA /* ArtifyAppUITests.swift */; };
 		8CC0350E2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0350D2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift */; };
+		8CCD4B152C35E4DD0003D7C0 /* StylesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD4B142C35E4DD0003D7C0 /* StylesModel.swift */; };
+		8CCD4B1B2C35F7590003D7C0 /* PhotoLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD4B1A2C35F7590003D7C0 /* PhotoLibraryManager.swift */; };
+		8CCD4B1E2C36AD0F0003D7C0 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD4B1D2C36AD0F0003D7C0 /* AlertManager.swift */; };
 		AA71CE8AEB0142B6A0546F76 /* Pods_ArtifyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38CD96EAD7963E555394E1B /* Pods_ArtifyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +91,12 @@
 		7E055212ACF5B944354D99DC /* Pods-ArtifyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp.release.xcconfig"; path = "Target Support Files/Pods-ArtifyApp/Pods-ArtifyApp.release.xcconfig"; sourceTree = "<group>"; };
 		8640AFA82F8727BDFD1DD74F /* Pods-ArtifyApp-ArtifyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp-ArtifyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ArtifyApp-ArtifyAppUITests/Pods-ArtifyApp-ArtifyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8756D8556301D92AFB08B095 /* Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArtifyApp-ArtifyAppUITests/Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C15EAA92C3B349F003461D8 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		8C39AD8D2C3C7C4C007C26C7 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		8C89B07B2C3BF9BB00801545 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		8C89B07D2C3BFA2200801545 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8C89B0812C3C01A400801545 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8C89B0832C3C066900801545 /* HistoryScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreenViewModel.swift; sourceTree = "<group>"; };
 		8C9FEABD2C3405100046D492 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		8C9FEAC12C3405360046D492 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -106,9 +118,6 @@
 		8C9FEAE32C34061E0046D492 /* GeneratedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedImageViewController.swift; sourceTree = "<group>"; };
 		8C9FEAE52C3408DE0046D492 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		8C9FEAE82C3417680046D492 /* RotatingCirclesActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCirclesActivityView.swift; sourceTree = "<group>"; };
-		8C9FEAED2C354B440046D492 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		8C9FEAF02C355BE60046D492 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		8C9FEAF22C355D610046D492 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8C9FEAF62C3569B20046D492 /* DetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewModel.swift; sourceTree = "<group>"; };
 		8CC034E72C33FFE100A580CA /* ArtifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC034EA2C33FFE100A580CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +131,9 @@
 		8CC035072C33FFE500A580CA /* ArtifyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtifyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC0350B2C33FFE500A580CA /* ArtifyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifyAppUITests.swift; sourceTree = "<group>"; };
 		8CC0350D2C33FFE500A580CA /* ArtifyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CCD4B142C35E4DD0003D7C0 /* StylesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesModel.swift; sourceTree = "<group>"; };
+		8CCD4B1A2C35F7590003D7C0 /* PhotoLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryManager.swift; sourceTree = "<group>"; };
+		8CCD4B1D2C36AD0F0003D7C0 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		9C79085D5579EE79A4890345 /* Pods-ArtifyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ArtifyAppUITests/Pods-ArtifyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8D0A53C78666B7DEB923480 /* Pods-ArtifyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyAppTests.release.xcconfig"; path = "Target Support Files/Pods-ArtifyAppTests/Pods-ArtifyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAEE401FDF388FAF5FA670A5 /* Pods-ArtifyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp.debug.xcconfig"; path = "Target Support Files/Pods-ArtifyApp/Pods-ArtifyApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +168,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C15EAA82C3B347D003461D8 /* HistoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8C15EAA92C3B349F003461D8 /* HistoryViewController.swift */,
+				8C89B0832C3C066900801545 /* HistoryScreenViewModel.swift */,
+				8C39AD8D2C3C7C4C007C26C7 /* HistoryCell.swift */,
+			);
+			path = HistoryScreen;
+			sourceTree = "<group>";
+		};
 		8C57A1083E665F30AAA76FFE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +198,7 @@
 			children = (
 				8C9FEABD2C3405100046D492 /* MainTabBarController.swift */,
 				8C9FEAB82C3402660046D492 /* MainScreen */,
+				8C15EAA82C3B347D003461D8 /* HistoryScreen */,
 			);
 			path = ApplicationModule;
 			sourceTree = "<group>";
@@ -234,9 +257,9 @@
 		8C9FEAEA2C34298B0046D492 /* CoreDataManager */ = {
 			isa = PBXGroup;
 			children = (
-				8C9FEAF22C355D610046D492 /* Photo+CoreDataClass.swift */,
-				8C9FEAED2C354B440046D492 /* StorageManager.swift */,
-				8C9FEAEF2C355BE60046D492 /* CoreData.xcdatamodeld */,
+				8C89B07D2C3BFA2200801545 /* Image+CoreDataClass.swift */,
+				8C89B07A2C3BF9BB00801545 /* CoreData.xcdatamodeld */,
+				8C89B0812C3C01A400801545 /* CoreDataManager.swift */,
 			);
 			path = CoreDataManager;
 			sourceTree = "<group>";
@@ -268,6 +291,7 @@
 		8CC034E92C33FFE100A580CA /* ArtifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				8CCD4B182C35F73B0003D7C0 /* Managers */,
 				8CC0351E2C34003600A580CA /* Models */,
 				8CC035202C34004A00A580CA /* Networking */,
 				8CC0351C2C34000E00A580CA /* Helpers */,
@@ -317,22 +341,19 @@
 		8CC0351C2C34000E00A580CA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8C9FEAEA2C34298B0046D492 /* CoreDataManager */,
-				8CC0351D2C34001F00A580CA /* Keycahain */,
 				8C9FEACD2C3405900046D492 /* UIViewController+Extensions.swift */,
 				8C9FEACF2C34059A0046D492 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		8CC0351D2C34001F00A580CA /* Keycahain */ = {
+		8CC0351D2C34001F00A580CA /* KeycahainManager */ = {
 			isa = PBXGroup;
 			children = (
 				8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */,
 				8C9FEAC12C3405360046D492 /* KeychainManager.swift */,
 			);
-			name = Keycahain;
-			path = ../Keycahain;
+			path = KeycahainManager;
 			sourceTree = "<group>";
 		};
 		8CC0351E2C34003600A580CA /* Models */ = {
@@ -340,6 +361,7 @@
 			children = (
 				8C9FEAC32C3405410046D492 /* ImageError.swift */,
 				8C9FEAC52C34054B0046D492 /* ImageModel.swift */,
+				8CCD4B142C35E4DD0003D7C0 /* StylesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,6 +383,17 @@
 				8C9FEACB2C3405850046D492 /* HTTP.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		8CCD4B182C35F73B0003D7C0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8CCD4B1A2C35F7590003D7C0 /* PhotoLibraryManager.swift */,
+				8CCD4B1D2C36AD0F0003D7C0 /* AlertManager.swift */,
+				8C9FEAEA2C34298B0046D492 /* CoreDataManager */,
+				8CC0351D2C34001F00A580CA /* KeycahainManager */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		A5EC6F98F3D063EAABAC26DB /* Frameworks */ = {
@@ -630,18 +663,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9FEAF42C355D610046D492 /* Photo+CoreDataClass.swift in Sources */,
+				8CCD4B1E2C36AD0F0003D7C0 /* AlertManager.swift in Sources */,
+				8CCD4B1B2C35F7590003D7C0 /* PhotoLibraryManager.swift in Sources */,
+				8C89B07C2C3BF9BB00801545 /* CoreData.xcdatamodeld in Sources */,
 				8C9FEAD42C3405B50046D492 /* GaleryViewController.swift in Sources */,
 				8CC034EF2C33FFE100A580CA /* MainViewController.swift in Sources */,
 				8C9FEAC22C3405360046D492 /* KeychainManager.swift in Sources */,
+				8C39AD8E2C3C7C4C007C26C7 /* HistoryCell.swift in Sources */,
 				8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */,
+				8C15EAAA2C3B349F003461D8 /* HistoryViewController.swift in Sources */,
 				8C9FEABE2C3405100046D492 /* MainTabBarController.swift in Sources */,
-				8C9FEAF12C355BE60046D492 /* CoreData.xcdatamodeld in Sources */,
+				8C89B0842C3C066900801545 /* HistoryScreenViewModel.swift in Sources */,
 				8C9FEAE92C3417680046D492 /* RotatingCirclesActivityView.swift in Sources */,
 				8C9FEACE2C3405900046D492 /* UIViewController+Extensions.swift in Sources */,
 				8C9FEAE42C34061E0046D492 /* GeneratedImageViewController.swift in Sources */,
 				8C9FEACC2C3405850046D492 /* HTTP.swift in Sources */,
 				8C9FEADD2C3405F70046D492 /* MainScreenViewModel.swift in Sources */,
+				8C89B0822C3C01A400801545 /* CoreDataManager.swift in Sources */,
 				8C9FEACA2C34057A0046D492 /* Endpoint.swift in Sources */,
 				8C9FEAD92C3405D20046D492 /* HelpUsViewController.swift in Sources */,
 				8C9FEAE12C34060B0046D492 /* StylesCell.swift in Sources */,
@@ -654,10 +692,11 @@
 				8C9FEAF72C3569B20046D492 /* DetailScreenViewModel.swift in Sources */,
 				8C9FEADF2C3406020046D492 /* PromtView.swift in Sources */,
 				8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */,
+				8C89B07F2C3BFA2200801545 /* Image+CoreDataClass.swift in Sources */,
+				8CCD4B152C35E4DD0003D7C0 /* StylesModel.swift in Sources */,
 				8C9FEAC82C3405710046D492 /* APIService.swift in Sources */,
 				8C9FEAC62C34054B0046D492 /* ImageModel.swift in Sources */,
 				8C9FEAD22C3405A90046D492 /* WelcomeViewController.swift in Sources */,
-				8C9FEAEE2C354B440046D492 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,7 +797,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -816,7 +855,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -841,7 +880,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -874,7 +913,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -901,7 +940,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8GS4783WX;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -921,7 +960,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8GS4783WX;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personal.ArtifyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1014,13 +1053,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8C9FEAEF2C355BE60046D492 /* CoreData.xcdatamodeld */ = {
+		8C89B07A2C3BF9BB00801545 /* CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8C9FEAF02C355BE60046D492 /* Model.xcdatamodel */,
+				8C89B07B2C3BF9BB00801545 /* CoreData.xcdatamodel */,
 			);
-			currentVersion = 8C9FEAF02C355BE60046D492 /* Model.xcdatamodel */;
-			path = CoreData.xcdatamodeld;
+			currentVersion = 8C89B07B2C3BF9BB00801545 /* CoreData.xcdatamodel */;
+			name = CoreData.xcdatamodeld;
+			path = /Users/h8k/Documents/swift/projects/ArtifyApp/ArtifyApp/Managers/CoreDataManager/CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
