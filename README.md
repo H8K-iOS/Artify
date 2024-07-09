@@ -7,7 +7,7 @@ The application was built with UIKit and MVVM architecture.Ыtorage implemented 
 ![Снимок экрана 2024-07-09 в 23 11 33](https://github.com/H8K-iOS/Artify/assets/147388544/0a774fbf-fe46-46b8-9608-98bebcde2e96)
 ![Снимок экрана 2024-07-09 в 23 12 16](https://github.com/H8K-iOS/Artify/assets/147388544/4be03fe0-841e-4afa-9778-ca54efc6e2a1)
 
-
+P.S. The application is not completely ready yet, but I will gradually bring it to perfection. Thanks for understanding
 # With Artify U Can
 - Generate images to suit your tastes and wishes
 - You can also take advantage of the most popular AI-Styles that are already preinstalled in Artify
