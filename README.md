@@ -24,3 +24,6 @@ P.S. The application is not completely ready yet, but I will gradually bring it 
 
 
 ![Снимок экрана 2024-07-09 в 23 01 10](https://github.com/H8K-iOS/Artify/assets/147388544/75721c6e-2b09-4995-b62f-52244f215ad5)
+
+
+![Снимок экрана 2024-07-09 в 23 26 02](https://github.com/H8K-iOS/Artify/assets/147388544/255a703e-5647-4620-b5e3-5d3d851377be)
