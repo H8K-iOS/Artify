@@ -28,7 +28,8 @@ final class StylesCell: UICollectionViewCell {
         
         
         imageView.snp.makeConstraints { make in
-            make.top.bottom.left.right.equalToSuperview()
+            make.left.top.equalToSuperview().offset(3)
+            make.bottom.right.equalToSuperview().inset(3)
         }
         
         title.snp.makeConstraints { make in

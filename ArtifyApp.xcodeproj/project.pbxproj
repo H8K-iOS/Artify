@@ -12,10 +12,8 @@
 		8C01998D2C35DDC400966D94 /* Pods_ArtifyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A420B5C74457BD32AE375B0 /* Pods_ArtifyAppUITests.framework */; };
 		8C15EAAA2C3B349F003461D8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15EAA92C3B349F003461D8 /* HistoryViewController.swift */; };
 		8C39AD8E2C3C7C4C007C26C7 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39AD8D2C3C7C4C007C26C7 /* HistoryCell.swift */; };
-		8C89B07C2C3BF9BB00801545 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C89B07A2C3BF9BB00801545 /* CoreData.xcdatamodeld */; };
 		8C89B07F2C3BFA2200801545 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89B07D2C3BFA2200801545 /* Image+CoreDataClass.swift */; };
 		8C89B0822C3C01A400801545 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89B0812C3C01A400801545 /* CoreDataManager.swift */; };
-		8C89B0842C3C066900801545 /* HistoryScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89B0832C3C066900801545 /* HistoryScreenViewModel.swift */; };
 		8C9FEABE2C3405100046D492 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEABD2C3405100046D492 /* MainTabBarController.swift */; };
 		8C9FEAC02C34052A0046D492 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */; };
 		8C9FEAC22C3405360046D492 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FEAC12C3405360046D492 /* KeychainManager.swift */; };
@@ -49,6 +47,14 @@
 		8CCD4B152C35E4DD0003D7C0 /* StylesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD4B142C35E4DD0003D7C0 /* StylesModel.swift */; };
 		8CCD4B1B2C35F7590003D7C0 /* PhotoLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD4B1A2C35F7590003D7C0 /* PhotoLibraryManager.swift */; };
 		8CCD4B1E2C36AD0F0003D7C0 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD4B1D2C36AD0F0003D7C0 /* AlertManager.swift */; };
+		A0AADE182C5CFBBA005BD618 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0AADE162C5CFBBA005BD618 /* CoreData.xcdatamodeld */; };
+		A0AADE1A2C5CFC73005BD618 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADE192C5CFC73005BD618 /* NetworkMonitor.swift */; };
+		A0AADE1C2C5CFC9A005BD618 /* Other+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADE1B2C5CFC9A005BD618 /* Other+Extensions.swift */; };
+		A0AADE202C5CFD05005BD618 /* HistoryDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADE1D2C5CFD05005BD618 /* HistoryDetailScreenViewModel.swift */; };
+		A0AADE212C5CFD05005BD618 /* HistoryScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADE1E2C5CFD05005BD618 /* HistoryScreenViewModel.swift */; };
+		A0AADE242C5CFD50005BD618 /* FirstPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADE232C5CFD50005BD618 /* FirstPromptView.swift */; };
+		A0AADE262C5CFD56005BD618 /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADE252C5CFD56005BD618 /* HistoryDetailViewController.swift */; };
+		A0AADE282C5CFD5D005BD618 /* HistoryInfoBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADE272C5CFD5D005BD618 /* HistoryInfoBottomSheet.swift */; };
 		AA71CE8AEB0142B6A0546F76 /* Pods_ArtifyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38CD96EAD7963E555394E1B /* Pods_ArtifyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,10 +99,8 @@
 		8756D8556301D92AFB08B095 /* Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArtifyApp-ArtifyAppUITests/Pods-ArtifyApp-ArtifyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C15EAA92C3B349F003461D8 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		8C39AD8D2C3C7C4C007C26C7 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
-		8C89B07B2C3BF9BB00801545 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		8C89B07D2C3BFA2200801545 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		8C89B0812C3C01A400801545 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		8C89B0832C3C066900801545 /* HistoryScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreenViewModel.swift; sourceTree = "<group>"; };
 		8C9FEABD2C3405100046D492 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8C9FEABF2C34052A0046D492 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		8C9FEAC12C3405360046D492 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -135,6 +139,14 @@
 		8CCD4B1A2C35F7590003D7C0 /* PhotoLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryManager.swift; sourceTree = "<group>"; };
 		8CCD4B1D2C36AD0F0003D7C0 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		9C79085D5579EE79A4890345 /* Pods-ArtifyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ArtifyAppUITests/Pods-ArtifyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0AADE172C5CFBBA005BD618 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		A0AADE192C5CFC73005BD618 /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		A0AADE1B2C5CFC9A005BD618 /* Other+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Other+Extensions.swift"; sourceTree = "<group>"; };
+		A0AADE1D2C5CFD05005BD618 /* HistoryDetailScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailScreenViewModel.swift; sourceTree = "<group>"; };
+		A0AADE1E2C5CFD05005BD618 /* HistoryScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryScreenViewModel.swift; sourceTree = "<group>"; };
+		A0AADE232C5CFD50005BD618 /* FirstPromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPromptView.swift; sourceTree = "<group>"; };
+		A0AADE252C5CFD56005BD618 /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
+		A0AADE272C5CFD5D005BD618 /* HistoryInfoBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryInfoBottomSheet.swift; sourceTree = "<group>"; };
 		A8D0A53C78666B7DEB923480 /* Pods-ArtifyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyAppTests.release.xcconfig"; path = "Target Support Files/Pods-ArtifyAppTests/Pods-ArtifyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAEE401FDF388FAF5FA670A5 /* Pods-ArtifyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtifyApp.debug.xcconfig"; path = "Target Support Files/Pods-ArtifyApp/Pods-ArtifyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C38CD96EAD7963E555394E1B /* Pods_ArtifyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtifyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,9 +183,8 @@
 		8C15EAA82C3B347D003461D8 /* HistoryScreen */ = {
 			isa = PBXGroup;
 			children = (
-				8C15EAA92C3B349F003461D8 /* HistoryViewController.swift */,
-				8C89B0832C3C066900801545 /* HistoryScreenViewModel.swift */,
-				8C39AD8D2C3C7C4C007C26C7 /* HistoryCell.swift */,
+				A0AADE222C5CFD3A005BD618 /* Views */,
+				A0AADE1F2C5CFD05005BD618 /* ViewModels */,
 			);
 			path = HistoryScreen;
 			sourceTree = "<group>";
@@ -258,8 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				8C89B07D2C3BFA2200801545 /* Image+CoreDataClass.swift */,
-				8C89B07A2C3BF9BB00801545 /* CoreData.xcdatamodeld */,
 				8C89B0812C3C01A400801545 /* CoreDataManager.swift */,
+				A0AADE162C5CFBBA005BD618 /* CoreData.xcdatamodeld */,
 			);
 			path = CoreDataManager;
 			sourceTree = "<group>";
@@ -291,9 +302,9 @@
 		8CC034E92C33FFE100A580CA /* ArtifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				8CC035202C34004A00A580CA /* Networking */,
 				8CCD4B182C35F73B0003D7C0 /* Managers */,
 				8CC0351E2C34003600A580CA /* Models */,
-				8CC035202C34004A00A580CA /* Networking */,
 				8CC0351C2C34000E00A580CA /* Helpers */,
 				8CC0351F2C34004300A580CA /* Modules */,
 			);
@@ -341,6 +352,7 @@
 		8CC0351C2C34000E00A580CA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A0AADE1B2C5CFC9A005BD618 /* Other+Extensions.swift */,
 				8C9FEACD2C3405900046D492 /* UIViewController+Extensions.swift */,
 				8C9FEACF2C34059A0046D492 /* Constants.swift */,
 			);
@@ -388,12 +400,34 @@
 		8CCD4B182C35F73B0003D7C0 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A0AADE192C5CFC73005BD618 /* NetworkMonitor.swift */,
 				8CCD4B1A2C35F7590003D7C0 /* PhotoLibraryManager.swift */,
 				8CCD4B1D2C36AD0F0003D7C0 /* AlertManager.swift */,
 				8C9FEAEA2C34298B0046D492 /* CoreDataManager */,
 				8CC0351D2C34001F00A580CA /* KeycahainManager */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A0AADE1F2C5CFD05005BD618 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A0AADE1D2C5CFD05005BD618 /* HistoryDetailScreenViewModel.swift */,
+				A0AADE1E2C5CFD05005BD618 /* HistoryScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A0AADE222C5CFD3A005BD618 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0AADE272C5CFD5D005BD618 /* HistoryInfoBottomSheet.swift */,
+				A0AADE252C5CFD56005BD618 /* HistoryDetailViewController.swift */,
+				A0AADE232C5CFD50005BD618 /* FirstPromptView.swift */,
+				8C15EAA92C3B349F003461D8 /* HistoryViewController.swift */,
+				8C39AD8D2C3C7C4C007C26C7 /* HistoryCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A5EC6F98F3D063EAABAC26DB /* Frameworks */ = {
@@ -665,15 +699,15 @@
 			files = (
 				8CCD4B1E2C36AD0F0003D7C0 /* AlertManager.swift in Sources */,
 				8CCD4B1B2C35F7590003D7C0 /* PhotoLibraryManager.swift in Sources */,
-				8C89B07C2C3BF9BB00801545 /* CoreData.xcdatamodeld in Sources */,
 				8C9FEAD42C3405B50046D492 /* GaleryViewController.swift in Sources */,
 				8CC034EF2C33FFE100A580CA /* MainViewController.swift in Sources */,
 				8C9FEAC22C3405360046D492 /* KeychainManager.swift in Sources */,
+				A0AADE212C5CFD05005BD618 /* HistoryScreenViewModel.swift in Sources */,
 				8C39AD8E2C3C7C4C007C26C7 /* HistoryCell.swift in Sources */,
+				A0AADE1C2C5CFC9A005BD618 /* Other+Extensions.swift in Sources */,
 				8CC034EB2C33FFE100A580CA /* AppDelegate.swift in Sources */,
 				8C15EAAA2C3B349F003461D8 /* HistoryViewController.swift in Sources */,
 				8C9FEABE2C3405100046D492 /* MainTabBarController.swift in Sources */,
-				8C89B0842C3C066900801545 /* HistoryScreenViewModel.swift in Sources */,
 				8C9FEAE92C3417680046D492 /* RotatingCirclesActivityView.swift in Sources */,
 				8C9FEACE2C3405900046D492 /* UIViewController+Extensions.swift in Sources */,
 				8C9FEAE42C34061E0046D492 /* GeneratedImageViewController.swift in Sources */,
@@ -682,14 +716,20 @@
 				8C89B0822C3C01A400801545 /* CoreDataManager.swift in Sources */,
 				8C9FEACA2C34057A0046D492 /* Endpoint.swift in Sources */,
 				8C9FEAD92C3405D20046D492 /* HelpUsViewController.swift in Sources */,
+				A0AADE282C5CFD5D005BD618 /* HistoryInfoBottomSheet.swift in Sources */,
 				8C9FEAE12C34060B0046D492 /* StylesCell.swift in Sources */,
 				8C9FEADB2C3405DA0046D492 /* SubscribeViewController.swift in Sources */,
 				8C9FEAE62C3408DE0046D492 /* LoadingViewController.swift in Sources */,
+				A0AADE202C5CFD05005BD618 /* HistoryDetailScreenViewModel.swift in Sources */,
 				8C9FEAD02C34059A0046D492 /* Constants.swift in Sources */,
+				A0AADE182C5CFBBA005BD618 /* CoreData.xcdatamodeld in Sources */,
+				A0AADE242C5CFD50005BD618 /* FirstPromptView.swift in Sources */,
+				A0AADE262C5CFD56005BD618 /* HistoryDetailViewController.swift in Sources */,
 				8C9FEAC42C3405410046D492 /* ImageError.swift in Sources */,
 				8C9FEAD72C3405C40046D492 /* WebViewer.swift in Sources */,
 				8C9FEAC02C34052A0046D492 /* KeychainHelper.swift in Sources */,
 				8C9FEAF72C3569B20046D492 /* DetailScreenViewModel.swift in Sources */,
+				A0AADE1A2C5CFC73005BD618 /* NetworkMonitor.swift in Sources */,
 				8C9FEADF2C3406020046D492 /* PromtView.swift in Sources */,
 				8CC034ED2C33FFE100A580CA /* SceneDelegate.swift in Sources */,
 				8C89B07F2C3BFA2200801545 /* Image+CoreDataClass.swift in Sources */,
@@ -1053,14 +1093,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8C89B07A2C3BF9BB00801545 /* CoreData.xcdatamodeld */ = {
+		A0AADE162C5CFBBA005BD618 /* CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8C89B07B2C3BF9BB00801545 /* CoreData.xcdatamodel */,
+				A0AADE172C5CFBBA005BD618 /* CoreData.xcdatamodel */,
 			);
-			currentVersion = 8C89B07B2C3BF9BB00801545 /* CoreData.xcdatamodel */;
+			currentVersion = A0AADE172C5CFBBA005BD618 /* CoreData.xcdatamodel */;
 			name = CoreData.xcdatamodeld;
-			path = /Users/h8k/Documents/swift/projects/ArtifyApp/ArtifyApp/Managers/CoreDataManager/CoreData.xcdatamodeld;
+			path = /Users/oleksandralimov/Documents/Swift/projects/Artify/ArtifyApp/Managers/CoreDataManager/CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

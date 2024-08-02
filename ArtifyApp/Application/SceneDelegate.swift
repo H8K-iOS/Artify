@@ -16,9 +16,6 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             animatedTransition(viewController: WelcomeViewController())
             UserDefaults.standard.set(true, forKey: "firstLaunch")
         }
-        
- //       animatedTransition(viewController: GeneratedImageViewController(imageURL: ""))
-        
     }
 
     private func setScene(with scene: UIScene) {
@@ -47,6 +44,4 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
         }
     }
-    //
 }
-

@@ -5,8 +5,7 @@ final class PromptView: UIView {
     let textView: UITextView = {
         let tv = UITextView()
         tv.translatesAutoresizingMaskIntoConstraints = false
-        tv.backgroundColor = .darkGray.withAlphaComponent(0.4)
-        tv.text = ""
+        tv.backgroundColor = #colorLiteral(red: 0.1072011217, green: 0.1075766459, blue: 0.1186723337, alpha: 1)
         tv.font = .systemFont(ofSize: 18)
         tv.textColor = .lightGray
         tv.layer.cornerRadius = 15
@@ -24,14 +23,17 @@ final class PromptView: UIView {
         return hs
     }()
     
-    let qualityButton: UIButton = {
+    let ratioButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Good Quality", for: .normal)
+        btn.setTitle(" Square", for: .normal)
+        btn.setImage(UIImage(systemName: "square"), for: .normal)
         btn.imageView?.contentMode = .scaleAspectFit
         btn.tintColor = .white
-        btn.backgroundColor = .darkGray.withAlphaComponent(0.5)
+        btn.imageView?.tintColor = .gray
+        btn.backgroundColor = #colorLiteral(red: 0.1072011217, green: 0.1075766459, blue: 0.1186723337, alpha: 1)
         btn.layer.cornerRadius = 15
+        btn.layer.zPosition = 1
         return btn
         
     }()
@@ -41,6 +43,7 @@ final class PromptView: UIView {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitle("Inspire me", for: .normal)
+        btn.titleLabel?.font = .systemFont(ofSize: 14)
         btn.setImage(#imageLiteral(resourceName: "randomIcon"), for: .normal)
         btn.imageView?.contentMode = .scaleAspectFit
         btn.tintColor = .white
@@ -73,27 +76,27 @@ final class PromptView: UIView {
         addSubview(textView)
         addSubview(hStack)
         addSubview(generateButton)
-        hStack.addArrangedSubview(generateButton)
-        hStack.addArrangedSubview(qualityButton)
+        addSubview(ratioButton)
         
         NSLayoutConstraint.activate([
-            
+            self.heightAnchor.constraint(equalToConstant: 220),
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 8),
             titleLabel.leftAnchor.constraint(equalTo: leftAnchor),
             
             textView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
             textView.leftAnchor.constraint(equalTo: leftAnchor),
             textView.rightAnchor.constraint(equalTo: rightAnchor),
-            textView.heightAnchor.constraint(equalToConstant: 160),
+            textView.heightAnchor.constraint(equalToConstant: 141),
             
+            generateButton.bottomAnchor.constraint(equalTo: textView.bottomAnchor, constant: -16),
+            generateButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            generateButton.heightAnchor.constraint(equalToConstant: 32),
+            generateButton.widthAnchor.constraint(equalToConstant: 124),
             
-            hStack.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 8),
-            hStack.leftAnchor.constraint(equalTo: leftAnchor),
-            hStack.rightAnchor.constraint(equalTo: rightAnchor),
-            hStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
-            
-            generateButton.heightAnchor.constraint(equalToConstant: 40),
-            
+            ratioButton.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 12),
+            ratioButton.leftAnchor.constraint(equalTo: textView.leftAnchor),
+            ratioButton.heightAnchor.constraint(equalToConstant: 44),
+            ratioButton.widthAnchor.constraint(equalToConstant: 111)
         ])
     }
 }

@@ -9,6 +9,10 @@ final class MainTabBarController: UITabBarController {
          setupTabBar()
          drawTabBar()
      }
+    
+    public func switchToFirstTab() {
+        self.selectedIndex = 0
+    }
 }
 
 //MARK: - Extensions
@@ -16,8 +20,8 @@ private extension MainTabBarController {
     func setupTabBar() {
         self.viewControllers = [
         generateVC(for: MainViewController(), icon: #imageLiteral(resourceName: "mainTab")),
-        generateVC(for: HistoryViewController(), icon: #imageLiteral(resourceName: "historyTab")),
-        generateVC(for: MainViewController(), icon: #imageLiteral(resourceName: "settingTab")),
+        generateVC(for: HistoryViewController(mainTabBar: self), icon: #imageLiteral(resourceName: "historyTab")),
+      //  generateVC(for: MainViewController(), icon: #imageLiteral(resourceName: "settingTab")),
         ]
     }
     

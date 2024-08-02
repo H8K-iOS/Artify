@@ -1,7 +1,9 @@
 import Foundation
 
 enum Endpoint {
-    case fetchImages(prompt: String)
+    case fetchSquareImage(prompt: String)
+    case fetchPortaitImage(prompt: String)
+    case fetchLandscapeImage(prompt: String)
     
     var request: URLRequest? {
         guard let url = self.url else { return nil }
@@ -23,22 +25,33 @@ enum Endpoint {
     
     private var path: String {
         switch self {
-        case .fetchImages:
-            return "/v1/images/generations"
-            //        return ""
+        case .fetchSquareImage:
+            return Constants.path
+        case .fetchPortaitImage:
+            return Constants.path
+        case .fetchLandscapeImage:
+            return Constants.path
         }
     }
     
     private var httpMethod: String {
         switch self {
-        case .fetchImages:
+        case .fetchSquareImage:
+            return HTTP.Methods.post.rawValue
+        case .fetchPortaitImage:
+            return HTTP.Methods.post.rawValue
+        case .fetchLandscapeImage:
             return HTTP.Methods.post.rawValue
         }
     }
     
     private var httpBody: Data? {
         switch self {
-        case .fetchImages(let prompt):
+        case .fetchSquareImage(prompt: let prompt):
+            HTTP.Body.generateBody(for: self, prompt: prompt)
+        case .fetchPortaitImage(prompt: let prompt):
+            HTTP.Body.generateBody(for: self, prompt: prompt)
+        case .fetchLandscapeImage(prompt: let prompt):
             HTTP.Body.generateBody(for: self, prompt: prompt)
         }
     }
@@ -55,5 +68,4 @@ extension URLRequest {
             self.addValue("\(HTTP.Headers.Values.bearer.rawValue) \(apiKey)", forHTTPHeaderField: HTTP.Headers.apiKey.rawValue)
         }
     }
-    //
 }

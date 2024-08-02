@@ -4,9 +4,10 @@ final class GeneratedImageViewController: UIViewController {
     //MARK: Constants
     private let viewModel: DetailScreenViewModel
     private let imageURLString: String
-    private var imageOrientation: ImageOrientation
-    
-    private let imageView = UIImageView()
+    private let promptText: String
+    private let style: String?
+    private var imageRatio: ImageRatio
+
     private let buttonsHStack: UIStackView = {
         let hs = UIStackView()
         hs.axis = .horizontal
@@ -17,10 +18,10 @@ final class GeneratedImageViewController: UIViewController {
 
     
     //MARK: Variables
-    
+    private lazy var imageView = createImageView()
     
     private var heightForImage: CGFloat {
-           switch imageOrientation {
+           switch imageRatio {
            case .square:
                return view.frame.height / 2.5
            case .portrait:
@@ -29,6 +30,7 @@ final class GeneratedImageViewController: UIViewController {
                return view.frame.height / 3.4
            }
        }
+    
     private lazy var doneButton = createDoneButton(selector: #selector(doneButtonTapped))
     
     private lazy var downloadButton = createGenerateScreenButton(type: .download,
@@ -45,12 +47,13 @@ final class GeneratedImageViewController: UIViewController {
                                                              selector: #selector(infoButtonTapped))
     
     //MARK: Lifecycle
-    init(imageURL: String,
-         imageOrientation: ImageOrientation,
+    init(imageURL: String, promptText: String, style: String?, imageRatio: ImageRatio,
          viewModel: DetailScreenViewModel = DetailScreenViewModel()) {
         self.viewModel = viewModel
+        self.promptText = promptText
+        self.style = style
         self.imageURLString = imageURL
-        self.imageOrientation = imageOrientation
+        self.imageRatio = imageRatio
         
         super.init(nibName: nil, bundle: nil)
         
@@ -73,21 +76,23 @@ final class GeneratedImageViewController: UIViewController {
     }
     
     deinit {
-        
+        print("DEINITED")
     }
     
     //MARK: Methods
-    //TODO: - 
+    //TODO: -
     private func loadImage() {
         viewModel.loadImage(imageUrl: imageURLString) { [weak self] image in
                 DispatchQueue.main.async {
                     if let image = image {
                         self?.imageView.image = image
-                        self?.viewModel.saveImageWithCoreData(image: image, height: Int16(self?.heightForImage ?? 0))
+                        let height = Int16(self?.heightForImage ?? 0)
+                        let prompt = self?.promptText ?? ""
+                        let style = self?.style ?? "Random"
+                        let ratio = self?.imageRatio as? String?
+                        self?.viewModel.saveImageWithCoreData(prompt: prompt, image: image, ratio: ratio ?? "Square", style: style, height: height)
                     } else {
                         print("Failed to load image from url: \(String(describing: self?.imageURLString))")
-                        
-                        self?.imageView.image = UIImage()
                     }
                 }
             }
@@ -147,17 +152,14 @@ private extension GeneratedImageViewController {
     
     func setupImageView() {
         self.view.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .gray.withAlphaComponent(0.1)
-        imageView.layer.cornerRadius = 20
-        imageView.clipsToBounds = true
+        self.imageView.backgroundColor = .darkGray.withAlphaComponent(0.1)
         
-        NSLayoutConstraint.activate([
-            imageView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 16),
-            imageView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: -16),
-            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            imageView.heightAnchor.constraint(equalToConstant: CGFloat(heightForImage))
-        ])
+        imageView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview().inset(16)
+            make.left.equalToSuperview().offset(16)
+            make.height.equalTo(heightForImage)
+        }
     }
     //
 }

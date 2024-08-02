@@ -5,6 +5,61 @@ enum TermsState {
 }
 
 extension UIViewController {
+    enum ButtonType {
+        case info
+        case download
+        case regenerate
+    }
+    
+    func createStackView(axis: NSLayoutConstraint.Axis) -> UIStackView {
+        let sv = UIStackView()
+        sv.axis = axis
+        sv.distribution = .equalSpacing
+        return sv
+    }
+    
+    func createGenerateScreenButton(type: ButtonType, title: String?, image: UIImage?, selector: Selector) -> UIButton {
+        let mainBtnsWidth = (self.view.frame.width/2.8)
+        let btnHeight = (self.view.frame.width/6.7)
+        let btn = UIButton()
+        btn.titleLabel?.font = .systemFont(ofSize: 20)
+        
+        btn.imageView?.tintColor = .white
+        btn.imageView?.backgroundColor = .clear
+        btn.layer.cornerRadius = 22
+        btn.heightAnchor.constraint(equalToConstant: btnHeight).isActive = true
+        switch type {
+            
+        case .info:
+            btn.widthAnchor.constraint(equalTo: btn.heightAnchor).isActive = true
+            btn.backgroundColor = .gray.withAlphaComponent(0.4)
+        case .regenerate:
+            btn.widthAnchor.constraint(equalToConstant: mainBtnsWidth).isActive = true
+            btn.backgroundColor = .gray.withAlphaComponent(0.4)
+            btn.setTitleColor(.white, for: .normal)
+        case .download:
+            btn.widthAnchor.constraint(equalToConstant: mainBtnsWidth).isActive = true
+            btn.backgroundColor = .white
+            btn.setTitleColor(.black, for: .normal)
+        }
+        
+        if let title {
+            btn.setTitle(title, for: .normal)
+        } else {
+            btn.setTitle("", for: .normal)
+        }
+        
+        if let image {
+            btn.setImage(image, for: .normal)
+        } else {
+            btn.setImage(nil, for: .normal)
+        }
+        
+        btn.addTarget(self, action: selector, for: .touchUpInside)
+        return btn
+    }
+    
+    
     func createButton(title: String, selector: Selector) -> UIButton{
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
@@ -51,6 +106,33 @@ extension UIViewController {
         tv.textAlignment = .center
         
         return tv
+    }
+    
+    
+    func createBackButton(selector: Selector) -> UIButton {
+        let btn = UIButton()
+        btn.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
+        btn.tintColor = .white
+        btn.imageView?.contentMode = .scaleAspectFill
+        btn.addTarget(self, action: selector, for: .touchUpInside)
+        return btn
+    }
+    
+    func createBackButton(icon: UIImage, selector: Selector) -> UIButton {
+        let btn = UIButton()
+        btn.setImage(icon, for: .normal)
+        btn.tintColor = .white
+        btn.imageView?.contentMode = .scaleAspectFill
+        btn.addTarget(self, action: selector, for: .touchUpInside)
+        return btn
+    }
+    
+    func createImageView() -> UIImageView {
+        let iv = UIImageView()
+        iv.backgroundColor = .darkGray.withAlphaComponent(0.1)
+        iv.layer.cornerRadius = 24
+        iv.clipsToBounds = true
+        return iv
     }
 }
 
@@ -148,52 +230,7 @@ extension MainViewController {
 
 //MARK: - GeneratedImageViewController
 extension GeneratedImageViewController {
-    enum ButtonType {
-        case info
-        case download
-        case regenerate
-    }
     
-    func createGenerateScreenButton(type: ButtonType, title: String?, image: UIImage?, selector: Selector) -> UIButton {
-        let mainBtnsWidth = (self.view.frame.width/2.8)
-        let btnHeight = (self.view.frame.width/6.7)
-        let btn = UIButton()
-        btn.titleLabel?.font = .systemFont(ofSize: 20)
-        
-        btn.imageView?.tintColor = .white
-        btn.imageView?.backgroundColor = .clear
-        btn.layer.cornerRadius = 22
-        btn.heightAnchor.constraint(equalToConstant: btnHeight).isActive = true
-        switch type {
-            
-        case .info:
-            btn.widthAnchor.constraint(equalTo: btn.heightAnchor).isActive = true
-            btn.backgroundColor = .gray.withAlphaComponent(0.4)
-        case .regenerate:
-            btn.widthAnchor.constraint(equalToConstant: mainBtnsWidth).isActive = true
-            btn.backgroundColor = .gray.withAlphaComponent(0.4)
-            btn.setTitleColor(.white, for: .normal)
-        case .download:
-            btn.widthAnchor.constraint(equalToConstant: mainBtnsWidth).isActive = true
-            btn.backgroundColor = .white
-            btn.setTitleColor(.black, for: .normal)
-        }
-        
-        if let title {
-            btn.setTitle(title, for: .normal)
-        } else {
-            btn.setTitle("", for: .normal)
-        }
-        
-        if let image {
-            btn.setImage(image, for: .normal)
-        } else {
-            btn.setImage(nil, for: .normal)
-        }
-        
-        btn.addTarget(self, action: selector, for: .touchUpInside)
-        return btn
-    }
     
     func createDoneButton(selector: Selector) -> UIButton {
         let btn = UIButton()
@@ -209,5 +246,4 @@ extension GeneratedImageViewController {
         btn.addTarget(self, action: selector, for: .touchUpInside)
         return btn
     }
-    //
 }

@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-enum ImageOrientation {
+enum ImageRatio {
     case square
     case portrait
     case landscape
@@ -10,14 +10,18 @@ final class MainScreenViewModel {
     private let apiService = APIService.shared
     private let coreDataManager = CoreDataManager.shared
     var onUpdate: (()->Void)?
-    
+    var imageRatioState = ImageRatio.square
     private(set) var images: [ImageModel] = [] {
         didSet {
             self.onUpdate?()
         }
     }
     
-    var selectedStyle: String?
+    public var imageStyle: String?
+    public var promptText: String?
+    public var rationValue: String?
+    public var selectedStyle: String?
+    public var selectedIndexPath: IndexPath?
     
     //TODO: -
     public let styles: [StylesModel] = [
@@ -44,34 +48,6 @@ final class MainScreenViewModel {
         StylesModel(styleName: "Bubbles", styleImage: "Bubbles"),
         StylesModel(styleName: "Crystals", styleImage: "Crystals")
     ]
-    
-    public let promtText = "Describe your ideas: objects, colors, places, people..."
-    
-    
-    init() {}
-    
-    func makePrompt(prompt: String, style: String) -> String{
-        return "\(prompt). + style: \(style)"
-        
-    }
-    
-    func fetchImage(for prompt: String) {
-        apiService.fetchImage(for: prompt) { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let images):
-                    self?.images = images
-                case .failure(let error):
-                    print("Error fetching image: \(error)")
-                    if case .serverError(let message) = error {
-                        print("Server error message: \(message)")
-                    }
-                }
-            }
-        }
-    }
-    
-    //TODO: -
     public let randomPrompts = [
         "A mystical island with floating lanterns",
         "A towering treehouse village in a dense forest",
@@ -174,5 +150,86 @@ final class MainScreenViewModel {
         "A futuristic city with gravity-defying buildings",
         "A hidden cave with ancient carvings"
     ]
+    
+    public let promtText = "Describe your ideas: objects, colors, places, people..."
+    
+    
+    init() {}
+    
+    public func checkInternetConnection(completion: @escaping(Bool?)->Void) {
+        if NetworkMonitor.shared.isConected {
+            completion(true)
+        }
+        else {
+            completion(nil)
+        }
+    }
+    
+    public func createRandomPrompt() -> String {
+        let randomIndex = Int.random(in: 0..<self.randomPrompts.count)
+        let selectedPromt = self.randomPrompts[randomIndex]
+        return selectedPromt
+    }
+    public func makePrompt(prompt: String, style: String) -> String{
+        return "\(prompt). + style: \(style)"
+        
+    }
 
+    public func fetchImage(prompt: String, completion: @escaping()->Void) {
+        switch imageRatioState {
+        case .square:
+            print("square")
+            self.fetchSquareImage(for: prompt)
+        case .portrait:
+            print("portrait")
+            self.fetchPortaitImage(for: prompt)
+        case .landscape:
+            print("landscape")
+            self.fetchLandscapeImage(for: prompt)
+        }
+        completion()
+    }
+    
+    private func fetchSquareImage(for prompt: String) {
+        apiService.fetchSquareImage(prompt: prompt) { [weak self] result in
+            switch result {
+            case .success(let image):
+                self?.images = image
+            case .failure(let error):
+                print("Error fetching image: \(error)")
+                if case .serverError(let message) = error {
+                    print("Server error message: \(message)")
+                }
+            }
+        }
+    }
+    
+    private func fetchPortaitImage(for prompt: String) {
+        apiService.fetchPortaitImage(prompt: prompt) { [weak self] result in
+            switch result {
+            case .success(let image):
+                self?.images = image
+            case .failure(let error):
+                print("Error fetching image: \(error)")
+                if case .serverError(let message) = error {
+                    print("Server error message: \(message)")
+                }
+                
+            }
+        }
+    }
+    
+    private func fetchLandscapeImage(for prompt: String) {
+        apiService.fetchLandscapeImage(prompt: prompt) { [weak self] result in
+            switch result {
+            case .success(let image):
+                self?.images = image
+            case .failure(let error):
+                print("Error fetching image: \(error)")
+                if case .serverError(let message) = error {
+                    print("Server error message: \(message)")
+                }
+            }
+        }
+    }
 }

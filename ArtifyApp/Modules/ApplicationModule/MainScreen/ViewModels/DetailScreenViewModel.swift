@@ -11,8 +11,8 @@ final class DetailScreenViewModel {
         photoLibrary.saveImage(image: image, completion: completion)
     }
     
-    func saveImageWithCoreData(image: UIImage, height: Int16) {
-        coreDataManager.addImage("", image: image, height: height)
+    func saveImageWithCoreData(prompt: String, image: UIImage, ratio: String?, style: String?, height: Int16) {
+        coreDataManager.addImage(prompt: prompt, image: image, style: style, ratio: ratio, height: height)
     }
     
     func loadImage(imageUrl: String, completion: @escaping(UIImage?)->Void) {

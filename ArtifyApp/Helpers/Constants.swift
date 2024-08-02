@@ -3,5 +3,5 @@ struct Constants {
     static let baseUrl = "api.openai.com"
     static let port: Int? = nil
     static let fullUrl = "https://api.openai.com"
-    //
+    static let path = "/v1/images/generations"
 }

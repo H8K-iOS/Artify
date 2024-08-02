@@ -27,7 +27,7 @@ final class CoreDataManager: NSObject {
     
     //MARK: - Add
     
-    public func addImage(_ title: String, image: UIImage, height: Int16) {
+    public func addImage(prompt: String, image: UIImage, style: String?, ratio: String?, height: Int16) {
         guard let imageEntityDescr = NSEntityDescription.entity(forEntityName: identifier, in: context) else {
             fatalError("no entity descript")
         }
@@ -36,7 +36,9 @@ final class CoreDataManager: NSObject {
         let newImage = Image(entity: imageEntityDescr, insertInto: context)
         
         newImage.image = imageData
-        newImage.title = title
+        newImage.title = prompt
+        newImage.style = style
+        newImage.ratio = ratio
         newImage.height = height
 
         appDelegate.saveContext()
