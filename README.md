@@ -7,6 +7,8 @@ The application was built with UIKit and MVVM architecture. Storage implemented 
 ![Screenshot 2024-08-07 at 11 32 40](https://github.com/user-attachments/assets/92d93517-ecd8-4f54-907b-916cfc6cdbec)
 
 
+![Screenshot 2024-08-07 at 11 38 29](https://github.com/user-attachments/assets/cb8a63d9-c100-4e9a-a053-68f7cae98c5b)
+
 
 P.S. The application is not completely ready yet, but I will gradually bring it to perfection. Thanks for understanding <3
 
